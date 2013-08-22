@@ -92,10 +92,10 @@ public abstract class EpubMojo
 
     /**
      * A list of additional XSL parameters to give to the XSLT engine.
-     * These parameters overrides regular docbook ones as they are last
+     * These parameters overrides regular DocBook ones as they are last
      * configured.<br/>
-     * For regular docbook parameters perfer the use of this plugin facilities
-     * offering nammed paramters.<br/>
+     * For regular DocBook parameters prefer the use of this plugin facilities
+     * offering named parameters.<br/>
      * These parameters feet well for custom properties you may have defined
      * within your customization layer.
      *
@@ -164,7 +164,7 @@ public abstract class EpubMojo
 
     /**
      * If zero (the default), the XSL processor emits a message naming each separate chunk filename as it is being output.
-     * (Original XSL attribuut: <code>chunk.quietly</code>.)
+     * (Original XSL attribute: <code>chunk.quietly</code>.)
      *
      * @parameter
      */  
@@ -172,7 +172,7 @@ public abstract class EpubMojo
 
     /**
      * The value of this parameter specifies profiles which should be included in the output.
-     * (Original XSL attribuut: <code>profile.condition</code>.)
+     * (Original XSL attribute: <code>profile.condition</code>.)
      *
      * @parameter
      */  
@@ -180,7 +180,7 @@ public abstract class EpubMojo
 
     /**
      * In DocBook documents that conform to a schema older than V4.
-     * (Original XSL attribuut: <code>use.role.as.xrefstyle</code>.)
+     * (Original XSL attribute: <code>use.role.as.xrefstyle</code>.)
      *
      * @parameter
      */  
@@ -188,7 +188,7 @@ public abstract class EpubMojo
 
     /**
      * The value of this parameter specifies profiles which should be included in the output.
-     * (Original XSL attribuut: <code>profile.role</code>.)
+     * (Original XSL attribute: <code>profile.role</code>.)
      *
      * @parameter
      */  
@@ -196,7 +196,7 @@ public abstract class EpubMojo
 
     /**
      * Sets the filename extension to use on navigational graphics used in the headers and footers of chunked HTML.
-     * (Original XSL attribuut: <code>navig.graphics.extension</code>.)
+     * (Original XSL attribute: <code>navig.graphics.extension</code>.)
      *
      * @parameter
      */  
@@ -204,7 +204,7 @@ public abstract class EpubMojo
 
     /**
      * Specifies the border color of table frames.
-     * (Original XSL attribuut: <code>table.frame.border.color</code>.)
+     * (Original XSL attribute: <code>table.frame.border.color</code>.)
      *
      * @parameter
      */  
@@ -212,7 +212,7 @@ public abstract class EpubMojo
 
     /**
      * If true, ToC and LoT (List of Examples, List of Figures, etc.
-     * (Original XSL attribuut: <code>chunk.tocs.and.lots</code>.)
+     * (Original XSL attribute: <code>chunk.tocs.and.lots</code>.)
      *
      * @parameter
      */  
@@ -220,7 +220,7 @@ public abstract class EpubMojo
 
     /**
      * For compatibility with DSSSL based DBTeXMath from Allin Cottrell you should set this parameter to 0.
-     * (Original XSL attribuut: <code>tex.math.delims</code>.)
+     * (Original XSL attribute: <code>tex.math.delims</code>.)
      *
      * @parameter
      */  
@@ -228,7 +228,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>graphic.default.extension</code>.)
+     * (Original XSL attribute: <code>graphic.default.extension</code>.)
      *
      * @parameter
      */  
@@ -236,7 +236,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>part.autolabel</code>.)
+     * (Original XSL attribute: <code>part.autolabel</code>.)
      *
      * @parameter
      */  
@@ -244,7 +244,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>show.revisionflag</code>.)
+     * (Original XSL attribute: <code>show.revisionflag</code>.)
      *
      * @parameter
      */  
@@ -252,7 +252,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>variablelist.as.table</code>.)
+     * (Original XSL attribute: <code>variablelist.as.table</code>.)
      *
      * @parameter
      */  
@@ -260,7 +260,7 @@ public abstract class EpubMojo
 
     /**
      * Set to true to generate a binary TOC.
-     * (Original XSL attribuut: <code>htmlhelp.hhc.binary</code>.)
+     * (Original XSL attribute: <code>htmlhelp.hhc.binary</code>.)
      *
      * @parameter
      */  
@@ -268,7 +268,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>graphicsize.extension</code>.)
+     * (Original XSL attribute: <code>graphicsize.extension</code>.)
      *
      * @parameter
      */  
@@ -276,7 +276,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>epub.cover.linear</code>.)
+     * (Original XSL attribute: <code>epub.cover.linear</code>.)
      *
      * @parameter
      */  
@@ -284,7 +284,7 @@ public abstract class EpubMojo
 
     /**
      * The fixed value used for calculations based upon the size of a character.
-     * (Original XSL attribuut: <code>points.per.em</code>.)
+     * (Original XSL attribute: <code>points.per.em</code>.)
      *
      * @parameter
      */  
@@ -292,7 +292,7 @@ public abstract class EpubMojo
 
     /**
      * This parameter specifies initial position of help window.
-     * (Original XSL attribuut: <code>htmlhelp.window.geometry</code>.)
+     * (Original XSL attribute: <code>htmlhelp.window.geometry</code>.)
      *
      * @parameter
      */  
@@ -300,7 +300,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>olink.sysid</code>.)
+     * (Original XSL attribute: <code>olink.sysid</code>.)
      *
      * @parameter
      */  
@@ -308,7 +308,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>inherit.keywords</code>.)
+     * (Original XSL attribute: <code>inherit.keywords</code>.)
      *
      * @parameter
      */  
@@ -316,7 +316,7 @@ public abstract class EpubMojo
 
     /**
      * The value of this parameter specifies profiles which should be included in the output.
-     * (Original XSL attribuut: <code>profile.revision</code>.)
+     * (Original XSL attribute: <code>profile.revision</code>.)
      *
      * @parameter
      */  
@@ -324,7 +324,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>ebnf.assignment</code>.)
+     * (Original XSL attribute: <code>ebnf.assignment</code>.)
      *
      * @parameter
      */  
@@ -332,7 +332,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>qanda.defaultlabel</code>.)
+     * (Original XSL attribute: <code>qanda.defaultlabel</code>.)
      *
      * @parameter
      */  
@@ -340,7 +340,7 @@ public abstract class EpubMojo
 
     /**
      * Set to true to include the Prev button  on the toolbar.
-     * (Original XSL attribuut: <code>htmlhelp.button.prev</code>.)
+     * (Original XSL attribute: <code>htmlhelp.button.prev</code>.)
      *
      * @parameter
      */  
@@ -348,7 +348,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>chunk.first.sections</code>.)
+     * (Original XSL attribute: <code>chunk.first.sections</code>.)
      *
      * @parameter
      */  
@@ -356,7 +356,7 @@ public abstract class EpubMojo
 
     /**
      * Graphic widths expressed as a percentage are problematic.
-     * (Original XSL attribuut: <code>nominal.image.width</code>.)
+     * (Original XSL attribute: <code>nominal.image.width</code>.)
      *
      * @parameter
      */  
@@ -364,7 +364,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>footnote.number.format</code>.)
+     * (Original XSL attribute: <code>footnote.number.format</code>.)
      *
      * @parameter
      */  
@@ -372,7 +372,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>reference.autolabel</code>.)
+     * (Original XSL attribute: <code>reference.autolabel</code>.)
      *
      * @parameter
      */  
@@ -380,7 +380,7 @@ public abstract class EpubMojo
 
     /**
      * This language is used when there is no language attribute on programlisting.
-     * (Original XSL attribuut: <code>highlight.default.language</code>.)
+     * (Original XSL attribute: <code>highlight.default.language</code>.)
      *
      * @parameter
      */  
@@ -388,7 +388,7 @@ public abstract class EpubMojo
 
     /**
      * A mediaobject may contain several objects such as imageobjects.
-     * (Original XSL attribuut: <code>preferred.mediaobject.role</code>.)
+     * (Original XSL attribute: <code>preferred.mediaobject.role</code>.)
      *
      * @parameter
      */  
@@ -396,7 +396,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>manual.toc</code>.)
+     * (Original XSL attribute: <code>manual.toc</code>.)
      *
      * @parameter
      */  
@@ -404,7 +404,7 @@ public abstract class EpubMojo
 
     /**
      * This parameter has a structured value.
-     * (Original XSL attribuut: <code>generate.toc</code>.)
+     * (Original XSL attribute: <code>generate.toc</code>.)
      *
      * @parameter
      */  
@@ -412,7 +412,7 @@ public abstract class EpubMojo
 
     /**
      * This parameter lets you select which method to use for sorting and grouping  index entries in an index.
-     * (Original XSL attribuut: <code>index.method</code>.)
+     * (Original XSL attribute: <code>index.method</code>.)
      *
      * @parameter
      */  
@@ -420,7 +420,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>insert.olink.pdf.frag</code>.)
+     * (Original XSL attribute: <code>insert.olink.pdf.frag</code>.)
      *
      * @parameter
      */  
@@ -428,7 +428,7 @@ public abstract class EpubMojo
 
     /**
      * Selects the border on EBNF tables.
-     * (Original XSL attribuut: <code>ebnf.table.border</code>.)
+     * (Original XSL attribute: <code>ebnf.table.border</code>.)
      *
      * @parameter
      */  
@@ -436,7 +436,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>index.on.type</code>.)
+     * (Original XSL attribute: <code>index.on.type</code>.)
      *
      * @parameter
      */  
@@ -444,7 +444,7 @@ public abstract class EpubMojo
 
     /**
      * String used to separate labels and titles in a table of contents.
-     * (Original XSL attribuut: <code>autotoc.label.separator</code>.)
+     * (Original XSL attribute: <code>autotoc.label.separator</code>.)
      *
      * @parameter
      */  
@@ -452,7 +452,7 @@ public abstract class EpubMojo
 
     /**
      * In order to convert CALS column widths into HTML column widths, it is sometimes necessary to have an absolute table width to use for conversion of mixed absolute and relative widths.
-     * (Original XSL attribuut: <code>nominal.table.width</code>.)
+     * (Original XSL attribute: <code>nominal.table.width</code>.)
      *
      * @parameter
      */  
@@ -460,7 +460,7 @@ public abstract class EpubMojo
 
     /**
      * When olinks between documents are resolved, the generated text may not make it clear that the reference is to another document.
-     * (Original XSL attribuut: <code>olink.doctitle</code>.)
+     * (Original XSL attribute: <code>olink.doctitle</code>.)
      *
      * @parameter
      */  
@@ -468,7 +468,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>htmlhelp.use.hhk</code>.)
+     * (Original XSL attribute: <code>htmlhelp.use.hhk</code>.)
      *
      * @parameter
      */  
@@ -476,7 +476,7 @@ public abstract class EpubMojo
 
     /**
      * Title of Jump2 button.
-     * (Original XSL attribuut: <code>htmlhelp.button.jump2.title</code>.)
+     * (Original XSL attribute: <code>htmlhelp.button.jump2.title</code>.)
      *
      * @parameter
      */  
@@ -484,7 +484,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>chunk.fast</code>.)
+     * (Original XSL attribute: <code>chunk.fast</code>.)
      *
      * @parameter
      */  
@@ -492,7 +492,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>insert.xref.page.number</code>.)
+     * (Original XSL attribute: <code>insert.xref.page.number</code>.)
      *
      * @parameter
      */  
@@ -500,7 +500,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>biblioentry.alt.primary.seps</code>.)
+     * (Original XSL attribute: <code>biblioentry.alt.primary.seps</code>.)
      *
      * @parameter
      */  
@@ -508,7 +508,7 @@ public abstract class EpubMojo
 
     /**
      * Normally first chunk of document is displayed when you open HTML Help file.
-     * (Original XSL attribuut: <code>htmlhelp.default.topic</code>.)
+     * (Original XSL attribute: <code>htmlhelp.default.topic</code>.)
      *
      * @parameter
      */  
@@ -516,7 +516,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>html.stylesheet</code>.)
+     * (Original XSL attribute: <code>html.stylesheet</code>.)
      *
      * @parameter
      */  
@@ -524,7 +524,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>emphasis.propagates.style</code>.)
+     * (Original XSL attribute: <code>emphasis.propagates.style</code>.)
      *
      * @parameter
      */  
@@ -532,7 +532,7 @@ public abstract class EpubMojo
 
     /**
      * Set to true to have an application menu bar in your HTML Help window.
-     * (Original XSL attribuut: <code>htmlhelp.show.menu</code>.)
+     * (Original XSL attribute: <code>htmlhelp.show.menu</code>.)
      *
      * @parameter
      */  
@@ -540,7 +540,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>onechunk</code>.)
+     * (Original XSL attribute: <code>onechunk</code>.)
      *
      * @parameter
      */  
@@ -548,7 +548,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>chunk.append</code>.)
+     * (Original XSL attribute: <code>chunk.append</code>.)
      *
      * @parameter
      */  
@@ -556,7 +556,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>html.append</code>.)
+     * (Original XSL attribute: <code>html.append</code>.)
      *
      * @parameter
      */  
@@ -564,7 +564,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>variablelist.term.break.after</code>.)
+     * (Original XSL attribute: <code>variablelist.term.break.after</code>.)
      *
      * @parameter
      */  
@@ -572,7 +572,7 @@ public abstract class EpubMojo
 
     /**
      * If you want advanced search features in your help, turn this parameter to 1.
-     * (Original XSL attribuut: <code>htmlhelp.show.advanced.search</code>.)
+     * (Original XSL attribute: <code>htmlhelp.show.advanced.search</code>.)
      *
      * @parameter
      */  
@@ -580,7 +580,7 @@ public abstract class EpubMojo
 
     /**
      * If non-zero, this value will be used as the default cellspacing value in HTML tables.
-     * (Original XSL attribuut: <code>html.cellspacing</code>.)
+     * (Original XSL attribute: <code>html.cellspacing</code>.)
      *
      * @parameter
      */  
@@ -588,7 +588,7 @@ public abstract class EpubMojo
 
     /**
      * If true, comments will be displayed, otherwise they are suppressed.
-     * (Original XSL attribuut: <code>show.comments</code>.)
+     * (Original XSL attribute: <code>show.comments</code>.)
      *
      * @parameter
      */  
@@ -596,7 +596,7 @@ public abstract class EpubMojo
 
     /**
      * The value of this parameter specifies profiles which should be included in the output.
-     * (Original XSL attribuut: <code>profile.os</code>.)
+     * (Original XSL attribute: <code>profile.os</code>.)
      *
      * @parameter
      */  
@@ -604,7 +604,7 @@ public abstract class EpubMojo
 
     /**
      * Specifies the border style of table frames.
-     * (Original XSL attribuut: <code>table.frame.border.style</code>.)
+     * (Original XSL attribute: <code>table.frame.border.style</code>.)
      *
      * @parameter
      */  
@@ -612,7 +612,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>html.longdesc.link</code>.)
+     * (Original XSL attribute: <code>html.longdesc.link</code>.)
      *
      * @parameter
      */  
@@ -620,7 +620,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>callout.graphics.number.limit</code>.)
+     * (Original XSL attribute: <code>callout.graphics.number.limit</code>.)
      *
      * @parameter
      */  
@@ -628,7 +628,7 @@ public abstract class EpubMojo
 
     /**
      * If true, header and footer navigation will be suppressed.
-     * (Original XSL attribuut: <code>suppress.navigation</code>.)
+     * (Original XSL attribute: <code>suppress.navigation</code>.)
      *
      * @parameter
      */  
@@ -636,7 +636,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>biblioentry.item.separator</code>.)
+     * (Original XSL attribute: <code>biblioentry.item.separator</code>.)
      *
      * @parameter
      */  
@@ -644,7 +644,7 @@ public abstract class EpubMojo
 
     /**
      * This parameter allows you to control the punctuation of certain types of generated cross reference text.
-     * (Original XSL attribuut: <code>xref.title-page.separator</code>.)
+     * (Original XSL attribute: <code>xref.title-page.separator</code>.)
      *
      * @parameter
      */  
@@ -652,7 +652,7 @@ public abstract class EpubMojo
 
     /**
      * The table columns extension function adjusts the widths of table columns in the HTML result to more accurately reflect the specifications in the CALS table.
-     * (Original XSL attribuut: <code>tablecolumns.extension</code>.)
+     * (Original XSL attribute: <code>tablecolumns.extension</code>.)
      *
      * @parameter
      */  
@@ -660,7 +660,7 @@ public abstract class EpubMojo
 
     /**
      * When cross reference data is collected for resolving olinks, it may be necessary to prepend a base URI to each target's href.
-     * (Original XSL attribuut: <code>olink.base.uri</code>.)
+     * (Original XSL attribute: <code>olink.base.uri</code>.)
      *
      * @parameter
      */  
@@ -668,7 +668,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>make.valid.html</code>.)
+     * (Original XSL attribute: <code>make.valid.html</code>.)
      *
      * @parameter
      */  
@@ -676,7 +676,7 @@ public abstract class EpubMojo
 
     /**
      * This image is used inline to identify the location of annotations.
-     * (Original XSL attribuut: <code>annotation.graphic.open</code>.)
+     * (Original XSL attribute: <code>annotation.graphic.open</code>.)
      *
      * @parameter
      */  
@@ -684,7 +684,7 @@ public abstract class EpubMojo
 
     /**
      * Value of this parameter specifies profiles which should be included in the output.
-     * (Original XSL attribuut: <code>profile.audience</code>.)
+     * (Original XSL attribute: <code>profile.audience</code>.)
      *
      * @parameter
      */  
@@ -692,7 +692,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>email.delimiters.enabled</code>.)
+     * (Original XSL attribute: <code>email.delimiters.enabled</code>.)
      *
      * @parameter
      */  
@@ -700,7 +700,7 @@ public abstract class EpubMojo
 
     /**
      * The stylesheets are capable of generating both default and custom CSS stylesheet files.
-     * (Original XSL attribuut: <code>generate.css.header</code>.)
+     * (Original XSL attribute: <code>generate.css.header</code>.)
      *
      * @parameter
      */  
@@ -708,7 +708,7 @@ public abstract class EpubMojo
 
     /**
      * Content of this parameter will be used as a title for generated HTML Help.
-     * (Original XSL attribuut: <code>htmlhelp.title</code>.)
+     * (Original XSL attribute: <code>htmlhelp.title</code>.)
      *
      * @parameter
      */  
@@ -716,7 +716,7 @@ public abstract class EpubMojo
 
     /**
      * If you want type math directly in TeX notation in equations, this parameter specifies notation used.
-     * (Original XSL attribuut: <code>tex.math.in.alt</code>.)
+     * (Original XSL attribute: <code>tex.math.in.alt</code>.)
      *
      * @parameter
      */  
@@ -724,7 +724,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>htmlhelp.force.map.and.alias</code>.)
+     * (Original XSL attribute: <code>htmlhelp.force.map.and.alias</code>.)
      *
      * @parameter
      */  
@@ -732,7 +732,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>section.autolabel.max.depth</code>.)
+     * (Original XSL attribute: <code>section.autolabel.max.depth</code>.)
      *
      * @parameter
      */  
@@ -740,7 +740,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>id.warnings</code>.)
+     * (Original XSL attribute: <code>id.warnings</code>.)
      *
      * @parameter
      */  
@@ -748,7 +748,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>ade.extensions</code>.)
+     * (Original XSL attribute: <code>ade.extensions</code>.)
      *
      * @parameter
      */  
@@ -756,7 +756,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>formal.object.break.after</code>.)
+     * (Original XSL attribute: <code>formal.object.break.after</code>.)
      *
      * @parameter
      */  
@@ -764,7 +764,7 @@ public abstract class EpubMojo
 
     /**
      * The value of this parameter specifies profiles which should be included in the output.
-     * (Original XSL attribuut: <code>profile.arch</code>.)
+     * (Original XSL attribute: <code>profile.arch</code>.)
      *
      * @parameter
      */  
@@ -772,7 +772,7 @@ public abstract class EpubMojo
 
     /**
      * Set the name of map file.
-     * (Original XSL attribuut: <code>htmlhelp.map.file</code>.)
+     * (Original XSL attribute: <code>htmlhelp.map.file</code>.)
      *
      * @parameter
      */  
@@ -780,7 +780,7 @@ public abstract class EpubMojo
 
     /**
      * This parameter specifies the list of elements that should be escaped as CDATA sections by the chunking stylesheet.
-     * (Original XSL attribuut: <code>chunker.output.cdata-section-elements</code>.)
+     * (Original XSL attribute: <code>chunker.output.cdata-section-elements</code>.)
      *
      * @parameter
      */  
@@ -788,7 +788,7 @@ public abstract class EpubMojo
 
     /**
      * The value of this parameter specifies profiles which should be included in the output.
-     * (Original XSL attribuut: <code>profile.conformance</code>.)
+     * (Original XSL attribute: <code>profile.conformance</code>.)
      *
      * @parameter
      */  
@@ -796,7 +796,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>html.head.legalnotice.link.multiple</code>.)
+     * (Original XSL attribute: <code>html.head.legalnotice.link.multiple</code>.)
      *
      * @parameter
      */  
@@ -804,7 +804,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>refclass.suppress</code>.)
+     * (Original XSL attribute: <code>refclass.suppress</code>.)
      *
      * @parameter
      */  
@@ -812,7 +812,7 @@ public abstract class EpubMojo
 
     /**
      * If non-zero, this value will be used as the default cellpadding value in HTML tables.
-     * (Original XSL attribuut: <code>html.cellpadding</code>.)
+     * (Original XSL attribute: <code>html.cellpadding</code>.)
      *
      * @parameter
      */  
@@ -820,7 +820,7 @@ public abstract class EpubMojo
 
     /**
      * Eclipse Help plugin id.
-     * (Original XSL attribuut: <code>eclipse.plugin.id</code>.)
+     * (Original XSL attribute: <code>eclipse.plugin.id</code>.)
      *
      * @parameter
      */  
@@ -828,7 +828,7 @@ public abstract class EpubMojo
 
     /**
      * This parameter specifies the public identifier that should be used by the chunking stylesheet in the document type declaration of chunked pages.
-     * (Original XSL attribuut: <code>chunker.output.doctype-public</code>.)
+     * (Original XSL attribute: <code>chunker.output.doctype-public</code>.)
      *
      * @parameter
      */  
@@ -836,7 +836,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>para.propagates.style</code>.)
+     * (Original XSL attribute: <code>para.propagates.style</code>.)
      *
      * @parameter
      */  
@@ -844,7 +844,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>make.clean.html</code>.)
+     * (Original XSL attribute: <code>make.clean.html</code>.)
      *
      * @parameter
      */  
@@ -852,7 +852,7 @@ public abstract class EpubMojo
 
     /**
      * When an automatically generated Table of Contents (or List of Titles) is produced, this HTML element will be used to make the list.
-     * (Original XSL attribuut: <code>toc.list.type</code>.)
+     * (Original XSL attribute: <code>toc.list.type</code>.)
      *
      * @parameter
      */  
@@ -860,7 +860,7 @@ public abstract class EpubMojo
 
     /**
      * If true, the navigational headers and footers in chunked HTML are presented in an alternate style that uses graphical icons for Next, Previous, Up, and Home.
-     * (Original XSL attribuut: <code>navig.graphics</code>.)
+     * (Original XSL attribute: <code>navig.graphics</code>.)
      *
      * @parameter
      */  
@@ -868,7 +868,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>generate.revhistory.link</code>.)
+     * (Original XSL attribute: <code>generate.revhistory.link</code>.)
      *
      * @parameter
      */  
@@ -876,7 +876,7 @@ public abstract class EpubMojo
 
     /**
      * The stylesheets are capable of generating a default CSS stylesheet file.
-     * (Original XSL attribuut: <code>docbook.css.link</code>.)
+     * (Original XSL attribute: <code>docbook.css.link</code>.)
      *
      * @parameter
      */  
@@ -884,7 +884,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>l10n.xml</code>.)
+     * (Original XSL attribute: <code>l10n.xml</code>.)
      *
      * @parameter
      */  
@@ -892,7 +892,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>table.footnote.number.symbols</code>.)
+     * (Original XSL attribute: <code>table.footnote.number.symbols</code>.)
      *
      * @parameter
      */  
@@ -900,7 +900,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>ulink.target</code>.)
+     * (Original XSL attribute: <code>ulink.target</code>.)
      *
      * @parameter
      */  
@@ -908,7 +908,7 @@ public abstract class EpubMojo
 
     /**
      * This parameter specifies the encoding to be used in files generated by the chunking stylesheet.
-     * (Original XSL attribuut: <code>chunker.output.encoding</code>.)
+     * (Original XSL attribute: <code>chunker.output.encoding</code>.)
      *
      * @parameter
      */  
@@ -916,7 +916,7 @@ public abstract class EpubMojo
 
     /**
      * If true (true), unlabeled sections will be enumerated.
-     * (Original XSL attribuut: <code>section.autolabel</code>.)
+     * (Original XSL attribute: <code>section.autolabel</code>.)
      *
      * @parameter
      */  
@@ -924,7 +924,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>generate.meta.abstract</code>.)
+     * (Original XSL attribute: <code>generate.meta.abstract</code>.)
      *
      * @parameter
      */  
@@ -932,7 +932,7 @@ public abstract class EpubMojo
 
     /**
      * If you want to include some additional parameters into project file, store appropriate part of project file into this parameter.
-     * (Original XSL attribuut: <code>htmlhelp.hhp.tail</code>.)
+     * (Original XSL attribute: <code>htmlhelp.hhp.tail</code>.)
      *
      * @parameter
      */  
@@ -940,7 +940,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>chunk.toc</code>.)
+     * (Original XSL attribute: <code>chunk.toc</code>.)
      *
      * @parameter
      */  
@@ -948,7 +948,7 @@ public abstract class EpubMojo
 
     /**
      * Set to true to include a Favorites tab in the navigation pane  of the help window.
-     * (Original XSL attribuut: <code>htmlhelp.show.favorities</code>.)
+     * (Original XSL attribute: <code>htmlhelp.show.favorities</code>.)
      *
      * @parameter
      */  
@@ -956,7 +956,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>glossterm.auto.link</code>.)
+     * (Original XSL attribute: <code>glossterm.auto.link</code>.)
      *
      * @parameter
      */  
@@ -964,7 +964,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>get</code>.)
+     * (Original XSL attribute: <code>get</code>.)
      *
      * @parameter
      */  
@@ -972,7 +972,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>simplesect.in.toc</code>.)
+     * (Original XSL attribute: <code>simplesect.in.toc</code>.)
      *
      * @parameter
      */  
@@ -980,7 +980,7 @@ public abstract class EpubMojo
 
     /**
      * If true, header navigation will be suppressed.
-     * (Original XSL attribuut: <code>suppress.header.navigation</code>.)
+     * (Original XSL attribute: <code>suppress.header.navigation</code>.)
      *
      * @parameter
      */  
@@ -988,7 +988,7 @@ public abstract class EpubMojo
 
     /**
      * Set to true to include the Jump2 button  on the toolbar.
-     * (Original XSL attribuut: <code>htmlhelp.button.jump2</code>.)
+     * (Original XSL attribute: <code>htmlhelp.button.jump2</code>.)
      *
      * @parameter
      */  
@@ -996,7 +996,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>htmlhelp.button.jump1</code>.)
+     * (Original XSL attribute: <code>htmlhelp.button.jump1</code>.)
      *
      * @parameter
      */  
@@ -1004,7 +1004,7 @@ public abstract class EpubMojo
 
     /**
      * This parameter specifies the value of the omit-xml-declaration specification for generated pages.
-     * (Original XSL attribuut: <code>chunker.output.omit-xml-declaration</code>.)
+     * (Original XSL attribute: <code>chunker.output.omit-xml-declaration</code>.)
      *
      * @parameter
      */  
@@ -1012,7 +1012,7 @@ public abstract class EpubMojo
 
     /**
      * Set to true to include the  Forward button  on the toolbar.
-     * (Original XSL attribuut: <code>htmlhelp.button.forward</code>.)
+     * (Original XSL attribute: <code>htmlhelp.button.forward</code>.)
      *
      * @parameter
      */  
@@ -1020,7 +1020,7 @@ public abstract class EpubMojo
 
     /**
      * This parameter specifies the punctuation that should be added after an honorific in a personal name.
-     * (Original XSL attribuut: <code>punct.honorific</code>.)
+     * (Original XSL attribute: <code>punct.honorific</code>.)
      *
      * @parameter
      */  
@@ -1028,7 +1028,7 @@ public abstract class EpubMojo
 
     /**
      * If true, the scaling attributes on graphics and media objects are ignored.
-     * (Original XSL attribuut: <code>ignore.image.scaling</code>.)
+     * (Original XSL attribute: <code>ignore.image.scaling</code>.)
      *
      * @parameter
      */  
@@ -1036,7 +1036,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>appendix.autolabel</code>.)
+     * (Original XSL attribute: <code>appendix.autolabel</code>.)
      *
      * @parameter
      */  
@@ -1044,7 +1044,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>entry.propagates.style</code>.)
+     * (Original XSL attribute: <code>entry.propagates.style</code>.)
      *
      * @parameter
      */  
@@ -1052,7 +1052,7 @@ public abstract class EpubMojo
 
     /**
      * If true, footer navigation will be suppressed.
-     * (Original XSL attribuut: <code>suppress.footer.navigation</code>.)
+     * (Original XSL attribute: <code>suppress.footer.navigation</code>.)
      *
      * @parameter
      */  
@@ -1060,7 +1060,7 @@ public abstract class EpubMojo
 
     /**
      * This parameter permits you to override the text to insert between the end of an index term and its list of page references.
-     * (Original XSL attribuut: <code>index.term.separator</code>.)
+     * (Original XSL attribute: <code>index.term.separator</code>.)
      *
      * @parameter
      */  
@@ -1068,7 +1068,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>callout.list.table</code>.)
+     * (Original XSL attribute: <code>callout.list.table</code>.)
      *
      * @parameter
      */  
@@ -1076,7 +1076,7 @@ public abstract class EpubMojo
 
     /**
      * Set to true if you want to play with various HTML Help parameters and you don't need to regenerate all HTML files.
-     * (Original XSL attribuut: <code>htmlhelp.only</code>.)
+     * (Original XSL attribute: <code>htmlhelp.only</code>.)
      *
      * @parameter
      */  
@@ -1084,7 +1084,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>html.longdesc</code>.)
+     * (Original XSL attribute: <code>html.longdesc</code>.)
      *
      * @parameter
      */  
@@ -1092,7 +1092,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>editedby.enabled</code>.)
+     * (Original XSL attribute: <code>editedby.enabled</code>.)
      *
      * @parameter
      */  
@@ -1100,7 +1100,7 @@ public abstract class EpubMojo
 
     /**
      * This parameter specifies the media type that should be used by the chunking stylesheet.
-     * (Original XSL attribuut: <code>chunker.output.media-type</code>.)
+     * (Original XSL attribute: <code>chunker.output.media-type</code>.)
      *
      * @parameter
      */  
@@ -1108,7 +1108,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>segmentedlist.as.table</code>.)
+     * (Original XSL attribute: <code>segmentedlist.as.table</code>.)
      *
      * @parameter
      */  
@@ -1116,7 +1116,7 @@ public abstract class EpubMojo
 
     /**
      * Set the name of the TOC file.
-     * (Original XSL attribuut: <code>htmlhelp.hhc</code>.)
+     * (Original XSL attribute: <code>htmlhelp.hhc</code>.)
      *
      * @parameter
      */  
@@ -1124,7 +1124,7 @@ public abstract class EpubMojo
 
     /**
      * Change this parameter if you want different name of project file than htmlhelp.
-     * (Original XSL attribuut: <code>htmlhelp.hhp</code>.)
+     * (Original XSL attribute: <code>htmlhelp.hhp</code>.)
      *
      * @parameter
      */  
@@ -1132,7 +1132,7 @@ public abstract class EpubMojo
 
     /**
      * This parameter specifies the value of the indent specification for generated pages.
-     * (Original XSL attribuut: <code>chunker.output.indent</code>.)
+     * (Original XSL attribute: <code>chunker.output.indent</code>.)
      *
      * @parameter
      */  
@@ -1140,7 +1140,7 @@ public abstract class EpubMojo
 
     /**
      * set the name of the index file.
-     * (Original XSL attribuut: <code>htmlhelp.hhk</code>.)
+     * (Original XSL attribute: <code>htmlhelp.hhk</code>.)
      *
      * @parameter
      */  
@@ -1148,7 +1148,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>custom.css.source</code>.)
+     * (Original XSL attribute: <code>custom.css.source</code>.)
      *
      * @parameter
      */  
@@ -1156,7 +1156,7 @@ public abstract class EpubMojo
 
     /**
      * HTML Help Compiler is not UTF-8 aware, so you should always use an appropriate single-byte encoding here.
-     * (Original XSL attribuut: <code>htmlhelp.encoding</code>.)
+     * (Original XSL attribute: <code>htmlhelp.encoding</code>.)
      *
      * @parameter
      */  
@@ -1164,7 +1164,7 @@ public abstract class EpubMojo
 
     /**
      * This image is used on popup annotations as the “x” that the user can click to dismiss the popup.
-     * (Original XSL attribuut: <code>annotation.graphic.close</code>.)
+     * (Original XSL attribute: <code>annotation.graphic.close</code>.)
      *
      * @parameter
      */  
@@ -1172,7 +1172,7 @@ public abstract class EpubMojo
 
     /**
      * This value will be used when there is no frame attribute on the table.
-     * (Original XSL attribuut: <code>default.table.frame</code>.)
+     * (Original XSL attribute: <code>default.table.frame</code>.)
      *
      * @parameter
      */  
@@ -1180,7 +1180,7 @@ public abstract class EpubMojo
 
     /**
      * Glossaries maintained independently across a set of documents are likely to become inconsistent unless considerable effort is expended to keep them in sync.
-     * (Original XSL attribuut: <code>glossary.collection</code>.)
+     * (Original XSL attribute: <code>glossary.collection</code>.)
      *
      * @parameter
      */  
@@ -1188,7 +1188,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>olink.outline.ext</code>.)
+     * (Original XSL attribute: <code>olink.outline.ext</code>.)
      *
      * @parameter
      */  
@@ -1196,7 +1196,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>menuchoice.menu.separator</code>.)
+     * (Original XSL attribute: <code>menuchoice.menu.separator</code>.)
      *
      * @parameter
      */  
@@ -1204,7 +1204,7 @@ public abstract class EpubMojo
 
     /**
      * The value of this parameter specifies profiles which should be included in the output.
-     * (Original XSL attribuut: <code>profile.security</code>.)
+     * (Original XSL attribute: <code>profile.security</code>.)
      *
      * @parameter
      */  
@@ -1212,7 +1212,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>chapter.autolabel</code>.)
+     * (Original XSL attribute: <code>chapter.autolabel</code>.)
      *
      * @parameter
      */  
@@ -1220,7 +1220,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>biblioentry.primary.count</code>.)
+     * (Original XSL attribute: <code>biblioentry.primary.count</code>.)
      *
      * @parameter
      */  
@@ -1228,7 +1228,7 @@ public abstract class EpubMojo
 
     /**
      * When lengths are converted to pixels, this value is used to determine the size of a pixel.
-     * (Original XSL attribuut: <code>pixels.per.inch</code>.)
+     * (Original XSL attribute: <code>pixels.per.inch</code>.)
      *
      * @parameter
      */  
@@ -1236,7 +1236,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>contrib.inline.enabled</code>.)
+     * (Original XSL attribute: <code>contrib.inline.enabled</code>.)
      *
      * @parameter
      */  
@@ -1244,7 +1244,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>olink.resolver</code>.)
+     * (Original XSL attribute: <code>olink.resolver</code>.)
      *
      * @parameter
      */  
@@ -1252,7 +1252,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>htmlhelp.button.back</code>.)
+     * (Original XSL attribute: <code>htmlhelp.button.back</code>.)
      *
      * @parameter
      */  
@@ -1260,7 +1260,7 @@ public abstract class EpubMojo
 
     /**
      * Specifies where formal object titles should occur.
-     * (Original XSL attribuut: <code>formal.title.placement</code>.)
+     * (Original XSL attribute: <code>formal.title.placement</code>.)
      *
      * @parameter
      */  
@@ -1268,7 +1268,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>chunker.output.quiet</code>.)
+     * (Original XSL attribute: <code>chunker.output.quiet</code>.)
      *
      * @parameter
      */  
@@ -1276,7 +1276,7 @@ public abstract class EpubMojo
 
     /**
      * Maintaining bibliography entries across a set of documents is tedious, time consuming, and error prone.
-     * (Original XSL attribuut: <code>bibliography.collection</code>.)
+     * (Original XSL attribute: <code>bibliography.collection</code>.)
      *
      * @parameter
      */  
@@ -1284,7 +1284,7 @@ public abstract class EpubMojo
 
     /**
      * This parameter permits you to override the text to insert between the two numbers of a page range in an index.
-     * (Original XSL attribuut: <code>index.range.separator</code>.)
+     * (Original XSL attribute: <code>index.range.separator</code>.)
      *
      * @parameter
      */  
@@ -1292,7 +1292,7 @@ public abstract class EpubMojo
 
     /**
      * If you want Locate button shown on toolbar, turn this parameter to 1.
-     * (Original XSL attribuut: <code>htmlhelp.button.locate</code>.)
+     * (Original XSL attribute: <code>htmlhelp.button.locate</code>.)
      *
      * @parameter
      */  
@@ -1300,7 +1300,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>shade.verbatim</code>.)
+     * (Original XSL attribute: <code>shade.verbatim</code>.)
      *
      * @parameter
      */  
@@ -1308,7 +1308,7 @@ public abstract class EpubMojo
 
     /**
      * If line numbering is enabled, line numbers will appear right justified in a field "width" characters wide.
-     * (Original XSL attribuut: <code>linenumbering.width</code>.)
+     * (Original XSL attribute: <code>linenumbering.width</code>.)
      *
      * @parameter
      */  
@@ -1316,7 +1316,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>l10n.gentext.default.language</code>.)
+     * (Original XSL attribute: <code>l10n.gentext.default.language</code>.)
      *
      * @parameter
      */  
@@ -1324,7 +1324,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>generate.legalnotice.link</code>.)
+     * (Original XSL attribute: <code>generate.legalnotice.link</code>.)
      *
      * @parameter
      */  
@@ -1332,7 +1332,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>refentry.generate.name</code>.)
+     * (Original XSL attribute: <code>refentry.generate.name</code>.)
      *
      * @parameter
      */  
@@ -1340,7 +1340,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>admon.style</code>.)
+     * (Original XSL attribute: <code>admon.style</code>.)
      *
      * @parameter
      */  
@@ -1348,7 +1348,7 @@ public abstract class EpubMojo
 
     /**
      * This parameter allows you to control the punctuation of certain types of generated cross reference text.
-     * (Original XSL attribuut: <code>xref.label-title.separator</code>.)
+     * (Original XSL attribute: <code>xref.label-title.separator</code>.)
      *
      * @parameter
      */  
@@ -1356,7 +1356,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>html.stylesheet.type</code>.)
+     * (Original XSL attribute: <code>html.stylesheet.type</code>.)
      *
      * @parameter
      */  
@@ -1364,7 +1364,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>variablelist.term.separator</code>.)
+     * (Original XSL attribute: <code>variablelist.term.separator</code>.)
      *
      * @parameter
      */  
@@ -1372,7 +1372,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>qanda.inherit.numeration</code>.)
+     * (Original XSL attribute: <code>qanda.inherit.numeration</code>.)
      *
      * @parameter
      */  
@@ -1380,7 +1380,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>callout.defaultcolumn</code>.)
+     * (Original XSL attribute: <code>callout.defaultcolumn</code>.)
      *
      * @parameter
      */  
@@ -1388,7 +1388,7 @@ public abstract class EpubMojo
 
     /**
      * The value of this parameter specifies profiles which should be included in the output.
-     * (Original XSL attribuut: <code>profile.revisionflag</code>.)
+     * (Original XSL attribute: <code>profile.revisionflag</code>.)
      *
      * @parameter
      */  
@@ -1396,7 +1396,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>procedure.step.numeration.formats</code>.)
+     * (Original XSL attribute: <code>procedure.step.numeration.formats</code>.)
      *
      * @parameter
      */  
@@ -1404,7 +1404,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>rootid</code>.)
+     * (Original XSL attribute: <code>rootid</code>.)
      *
      * @parameter
      */  
@@ -1412,7 +1412,7 @@ public abstract class EpubMojo
 
     /**
      * This parameter sets the depth of section chunking.
-     * (Original XSL attribuut: <code>chunk.section.depth</code>.)
+     * (Original XSL attribute: <code>chunk.section.depth</code>.)
      *
      * @parameter
      */  
@@ -1420,7 +1420,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>refentry.xref.manvolnum</code>.)
+     * (Original XSL attribute: <code>refentry.xref.manvolnum</code>.)
      *
      * @parameter
      */  
@@ -1428,7 +1428,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>epub.html.toc.id</code>.)
+     * (Original XSL attribute: <code>epub.html.toc.id</code>.)
      *
      * @parameter
      */  
@@ -1436,7 +1436,7 @@ public abstract class EpubMojo
 
     /**
      * Name of default window.
-     * (Original XSL attribuut: <code>htmlhelp.hhp.window</code>.)
+     * (Original XSL attribute: <code>htmlhelp.hhp.window</code>.)
      *
      * @parameter
      */  
@@ -1444,7 +1444,7 @@ public abstract class EpubMojo
 
     /**
      * In order to resolve olinks efficiently, the stylesheets can generate an external data file containing information about all potential cross reference endpoints in a document.
-     * (Original XSL attribuut: <code>collect.xref.targets</code>.)
+     * (Original XSL attribute: <code>collect.xref.targets</code>.)
      *
      * @parameter
      */  
@@ -1452,7 +1452,7 @@ public abstract class EpubMojo
 
     /**
      * If true, year ranges that span a single year will be printed in range notation (1998-1999) instead of discrete notation (1998, 1999).
-     * (Original XSL attribuut: <code>make.single.year.ranges</code>.)
+     * (Original XSL attribute: <code>make.single.year.ranges</code>.)
      *
      * @parameter
      */  
@@ -1460,7 +1460,7 @@ public abstract class EpubMojo
 
     /**
      * When true this parameter enables enhanced decompilation of CHM.
-     * (Original XSL attribuut: <code>htmlhelp.enhanced.decompilation</code>.)
+     * (Original XSL attribute: <code>htmlhelp.enhanced.decompilation</code>.)
      *
      * @parameter
      */  
@@ -1468,7 +1468,7 @@ public abstract class EpubMojo
 
     /**
      * URL address of page accessible by Jump2 button.
-     * (Original XSL attribuut: <code>htmlhelp.button.jump2.url</code>.)
+     * (Original XSL attribute: <code>htmlhelp.button.jump2.url</code>.)
      *
      * @parameter
      */  
@@ -1476,7 +1476,7 @@ public abstract class EpubMojo
 
     /**
      * Set to true for folder-like icons or zero for book-like icons in the ToC.
-     * (Original XSL attribuut: <code>htmlhelp.hhc.folders.instead.books</code>.)
+     * (Original XSL attribute: <code>htmlhelp.hhc.folders.instead.books</code>.)
      *
      * @parameter
      */  
@@ -1484,7 +1484,7 @@ public abstract class EpubMojo
 
     /**
      * If true, the HTML stylesheet will generate ID attributes on containers.
-     * (Original XSL attribuut: <code>generate.id.attributes</code>.)
+     * (Original XSL attribute: <code>generate.id.attributes</code>.)
      *
      * @parameter
      */  
@@ -1492,7 +1492,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>epub.cover.id</code>.)
+     * (Original XSL attribute: <code>epub.cover.id</code>.)
      *
      * @parameter
      */  
@@ -1500,7 +1500,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>stylesheet.result.type</code>.)
+     * (Original XSL attribute: <code>stylesheet.result.type</code>.)
      *
      * @parameter
      */  
@@ -1508,7 +1508,7 @@ public abstract class EpubMojo
 
     /**
      * This parameter permits you to override the text to insert between page references in a formatted index entry.
-     * (Original XSL attribuut: <code>index.number.separator</code>.)
+     * (Original XSL attribute: <code>index.number.separator</code>.)
      *
      * @parameter
      */  
@@ -1516,7 +1516,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>callout.unicode.start.character</code>.)
+     * (Original XSL attribute: <code>callout.unicode.start.character</code>.)
      *
      * @parameter
      */  
@@ -1524,7 +1524,7 @@ public abstract class EpubMojo
 
     /**
      * Sets the background color for EBNF tables (a pale brown).
-     * (Original XSL attribuut: <code>ebnf.table.bgcolor</code>.)
+     * (Original XSL attribute: <code>ebnf.table.bgcolor</code>.)
      *
      * @parameter
      */  
@@ -1532,7 +1532,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>epub.container.filename</code>.)
+     * (Original XSL attribute: <code>epub.container.filename</code>.)
      *
      * @parameter
      */  
@@ -1540,7 +1540,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>l10n.lang.value.rfc.compliant</code>.)
+     * (Original XSL attribute: <code>l10n.lang.value.rfc.compliant</code>.)
      *
      * @parameter
      */  
@@ -1548,7 +1548,7 @@ public abstract class EpubMojo
 
     /**
      * This parameter allows you to control the punctuation of certain types of generated cross reference text.
-     * (Original XSL attribuut: <code>xref.label-page.separator</code>.)
+     * (Original XSL attribute: <code>xref.label-page.separator</code>.)
      *
      * @parameter
      */  
@@ -1556,7 +1556,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>process.empty.source.toc</code>.)
+     * (Original XSL attribute: <code>process.empty.source.toc</code>.)
      *
      * @parameter
      */  
@@ -1564,7 +1564,7 @@ public abstract class EpubMojo
 
     /**
      * Set to true to remember help window position between starts.
-     * (Original XSL attribuut: <code>htmlhelp.remember.window.position</code>.)
+     * (Original XSL attribute: <code>htmlhelp.remember.window.position</code>.)
      *
      * @parameter
      */  
@@ -1572,7 +1572,7 @@ public abstract class EpubMojo
 
     /**
      * If true, the headers and footers of chunked HTML display the titles of the next and previous chunks, along with the words 'Next' and 'Previous' (or the equivalent graphical icons if navig.
-     * (Original XSL attribuut: <code>navig.showtitles</code>.)
+     * (Original XSL attribute: <code>navig.showtitles</code>.)
      *
      * @parameter
      */  
@@ -1580,7 +1580,7 @@ public abstract class EpubMojo
 
     /**
      * This location has precedence over the corresponding Java property.
-     * (Original XSL attribuut: <code>highlight.xslthl.config</code>.)
+     * (Original XSL attribute: <code>highlight.xslthl.config</code>.)
      *
      * @parameter
      */  
@@ -1588,7 +1588,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>epub.ncx.filename</code>.)
+     * (Original XSL attribute: <code>epub.ncx.filename</code>.)
      *
      * @parameter
      */  
@@ -1596,7 +1596,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>highlight.source</code>.)
+     * (Original XSL attribute: <code>highlight.source</code>.)
      *
      * @parameter
      */  
@@ -1604,7 +1604,7 @@ public abstract class EpubMojo
 
     /**
      * If true, a rule will be drawn above the page footers.
-     * (Original XSL attribuut: <code>footer.rule</code>.)
+     * (Original XSL attribute: <code>footer.rule</code>.)
      *
      * @parameter
      */  
@@ -1612,7 +1612,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>refentry.generate.title</code>.)
+     * (Original XSL attribute: <code>refentry.generate.title</code>.)
      *
      * @parameter
      */  
@@ -1620,7 +1620,7 @@ public abstract class EpubMojo
 
     /**
      * Sets the path, probably relative to the directory where the HTML files are created, to the navigational graphics used in the headers and footers of chunked HTML.
-     * (Original XSL attribuut: <code>navig.graphics.path</code>.)
+     * (Original XSL attribute: <code>navig.graphics.path</code>.)
      *
      * @parameter
      */  
@@ -1628,7 +1628,7 @@ public abstract class EpubMojo
 
     /**
      * Sets the path to the directory holding the callout graphics.
-     * (Original XSL attribuut: <code>callout.graphics.path</code>.)
+     * (Original XSL attribute: <code>callout.graphics.path</code>.)
      *
      * @parameter
      */  
@@ -1636,7 +1636,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>autotoc.label.in.hyperlink</code>.)
+     * (Original XSL attribute: <code>autotoc.label.in.hyperlink</code>.)
      *
      * @parameter
      */  
@@ -1644,7 +1644,7 @@ public abstract class EpubMojo
 
     /**
      * Set to true to include the Zoom button  on the toolbar.
-     * (Original XSL attribuut: <code>htmlhelp.button.zoom</code>.)
+     * (Original XSL attribute: <code>htmlhelp.button.zoom</code>.)
      *
      * @parameter
      */  
@@ -1652,7 +1652,7 @@ public abstract class EpubMojo
 
     /**
      * This parameter specifies the output method to be used in files generated by the chunking stylesheet.
-     * (Original XSL attribuut: <code>chunker.output.method</code>.)
+     * (Original XSL attribute: <code>chunker.output.method</code>.)
      *
      * @parameter
      */  
@@ -1660,7 +1660,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>qanda.in.toc</code>.)
+     * (Original XSL attribute: <code>qanda.in.toc</code>.)
      *
      * @parameter
      */  
@@ -1668,7 +1668,7 @@ public abstract class EpubMojo
 
     /**
      * If true, then the glossentry elements within a glossary, glossdiv, or glosslist are sorted on the glossterm, using the current lang setting.
-     * (Original XSL attribuut: <code>glossary.sort</code>.)
+     * (Original XSL attribute: <code>glossary.sort</code>.)
      *
      * @parameter
      */  
@@ -1676,7 +1676,7 @@ public abstract class EpubMojo
 
     /**
      * Sets the filename extension to use on callout graphics.
-     * (Original XSL attribuut: <code>callout.graphics.extension</code>.)
+     * (Original XSL attribute: <code>callout.graphics.extension</code>.)
      *
      * @parameter
      */  
@@ -1684,7 +1684,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>footnote.number.symbols</code>.)
+     * (Original XSL attribute: <code>footnote.number.symbols</code>.)
      *
      * @parameter
      */  
@@ -1692,7 +1692,7 @@ public abstract class EpubMojo
 
     /**
      * URL address of page accessible by Home button.
-     * (Original XSL attribuut: <code>htmlhelp.button.home.url</code>.)
+     * (Original XSL attribute: <code>htmlhelp.button.home.url</code>.)
      *
      * @parameter
      */  
@@ -1700,7 +1700,7 @@ public abstract class EpubMojo
 
     /**
      * If true, CSS will be used to draw table borders.
-     * (Original XSL attribuut: <code>table.borders.with.css</code>.)
+     * (Original XSL attribute: <code>table.borders.with.css</code>.)
      *
      * @parameter
      */  
@@ -1708,7 +1708,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>html.extra.head.links</code>.)
+     * (Original XSL attribute: <code>html.extra.head.links</code>.)
      *
      * @parameter
      */  
@@ -1716,7 +1716,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>bridgehead.in.toc</code>.)
+     * (Original XSL attribute: <code>bridgehead.in.toc</code>.)
      *
      * @parameter
      */  
@@ -1724,7 +1724,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>othercredit.like.author.enabled</code>.)
+     * (Original XSL attribute: <code>othercredit.like.author.enabled</code>.)
      *
      * @parameter
      */  
@@ -1732,7 +1732,7 @@ public abstract class EpubMojo
 
     /**
      * If line numbering is enabled, everyNth line will be numbered.
-     * (Original XSL attribuut: <code>linenumbering.everyNth</code>.)
+     * (Original XSL attribute: <code>linenumbering.everyNth</code>.)
      *
      * @parameter
      */  
@@ -1740,7 +1740,7 @@ public abstract class EpubMojo
 
     /**
      * This parameter has effect only when Saxon 6 is used (version 6.
-     * (Original XSL attribuut: <code>saxon.character.representation</code>.)
+     * (Original XSL attribute: <code>saxon.character.representation</code>.)
      *
      * @parameter
      */  
@@ -1748,7 +1748,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>funcsynopsis.style</code>.)
+     * (Original XSL attribute: <code>funcsynopsis.style</code>.)
      *
      * @parameter
      */  
@@ -1756,7 +1756,7 @@ public abstract class EpubMojo
 
     /**
      * Specify if an index should be generated.
-     * (Original XSL attribuut: <code>generate.index</code>.)
+     * (Original XSL attribute: <code>generate.index</code>.)
      *
      * @parameter
      */  
@@ -1764,7 +1764,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>empty.local.l10n.xml</code>.)
+     * (Original XSL attribute: <code>empty.local.l10n.xml</code>.)
      *
      * @parameter
      */  
@@ -1772,7 +1772,7 @@ public abstract class EpubMojo
 
     /**
      * Set to true to display texts under toolbar buttons, zero to switch off displays.
-     * (Original XSL attribuut: <code>htmlhelp.show.toolbar.text</code>.)
+     * (Original XSL attribute: <code>htmlhelp.show.toolbar.text</code>.)
      *
      * @parameter
      */  
@@ -1780,7 +1780,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>epub.embedded.fonts</code>.)
+     * (Original XSL attribute: <code>epub.embedded.fonts</code>.)
      *
      * @parameter
      */  
@@ -1788,7 +1788,7 @@ public abstract class EpubMojo
 
     /**
      * If true, the language of the target will be used when generating cross reference text.
-     * (Original XSL attribuut: <code>l10n.gentext.use.xref.language</code>.)
+     * (Original XSL attribute: <code>l10n.gentext.use.xref.language</code>.)
      *
      * @parameter
      */  
@@ -1796,7 +1796,7 @@ public abstract class EpubMojo
 
     /**
      * This parameter defines a list of lang values to search among to resolve olinks.
-     * (Original XSL attribuut: <code>olink.lang.fallback.sequence</code>.)
+     * (Original XSL attribute: <code>olink.lang.fallback.sequence</code>.)
      *
      * @parameter
      */  
@@ -1804,7 +1804,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>epub.ncx.toc.id</code>.)
+     * (Original XSL attribute: <code>epub.ncx.toc.id</code>.)
      *
      * @parameter
      */  
@@ -1812,7 +1812,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>author.othername.in.middle</code>.)
+     * (Original XSL attribute: <code>author.othername.in.middle</code>.)
      *
      * @parameter
      */  
@@ -1820,7 +1820,7 @@ public abstract class EpubMojo
 
     /**
      * If true, a separator will be generated between consecutive reference pages.
-     * (Original XSL attribuut: <code>refentry.separator</code>.)
+     * (Original XSL attribute: <code>refentry.separator</code>.)
      *
      * @parameter
      */  
@@ -1828,7 +1828,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>menuchoice.separator</code>.)
+     * (Original XSL attribute: <code>menuchoice.separator</code>.)
      *
      * @parameter
      */  
@@ -1836,7 +1836,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>make.year.ranges</code>.)
+     * (Original XSL attribute: <code>make.year.ranges</code>.)
      *
      * @parameter
      */  
@@ -1844,7 +1844,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>make.graphic.viewport</code>.)
+     * (Original XSL attribute: <code>make.graphic.viewport</code>.)
      *
      * @parameter
      */  
@@ -1852,7 +1852,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>manifest</code>.)
+     * (Original XSL attribute: <code>manifest</code>.)
      *
      * @parameter
      */  
@@ -1860,7 +1860,7 @@ public abstract class EpubMojo
 
     /**
      * If you want Stop button shown on toolbar, turn this parameter to 1.
-     * (Original XSL attribuut: <code>htmlhelp.button.stop</code>.)
+     * (Original XSL attribute: <code>htmlhelp.button.stop</code>.)
      *
      * @parameter
      */  
@@ -1868,7 +1868,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>nominal.image.depth</code>.)
+     * (Original XSL attribute: <code>nominal.image.depth</code>.)
      *
      * @parameter
      */  
@@ -1876,7 +1876,7 @@ public abstract class EpubMojo
 
     /**
      * If this parameter is set to any value other than the empty string, its value will be used as the value for the language when generating text.
-     * (Original XSL attribuut: <code>l10n.gentext.language</code>.)
+     * (Original XSL attribute: <code>l10n.gentext.language</code>.)
      *
      * @parameter
      */  
@@ -1884,7 +1884,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>htmlhelp.chm</code>.)
+     * (Original XSL attribute: <code>htmlhelp.chm</code>.)
      *
      * @parameter
      */  
@@ -1892,7 +1892,7 @@ public abstract class EpubMojo
 
     /**
      * This parameter specifies the width of the navigation pane (containing TOC and other navigation tabs) in pixels.
-     * (Original XSL attribuut: <code>htmlhelp.hhc.width</code>.)
+     * (Original XSL attribute: <code>htmlhelp.hhc.width</code>.)
      *
      * @parameter
      */  
@@ -1900,7 +1900,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>epub.ncx.depth</code>.)
+     * (Original XSL attribute: <code>epub.ncx.depth</code>.)
      *
      * @parameter
      */  
@@ -1908,7 +1908,7 @@ public abstract class EpubMojo
 
     /**
      * If true, extensions may be used.
-     * (Original XSL attribuut: <code>use.extensions</code>.)
+     * (Original XSL attribute: <code>use.extensions</code>.)
      *
      * @parameter
      */  
@@ -1916,7 +1916,7 @@ public abstract class EpubMojo
 
     /**
      * Specify which characters are to be counted as punctuation.
-     * (Original XSL attribuut: <code>runinhead.title.end.punct</code>.)
+     * (Original XSL attribute: <code>runinhead.title.end.punct</code>.)
      *
      * @parameter
      */  
@@ -1924,7 +1924,7 @@ public abstract class EpubMojo
 
     /**
      * If true, then each olink will generate several messages about how it is being resolved during processing.
-     * (Original XSL attribuut: <code>olink.debug</code>.)
+     * (Original XSL attribute: <code>olink.debug</code>.)
      *
      * @parameter
      */  
@@ -1932,7 +1932,7 @@ public abstract class EpubMojo
 
     /**
      * Title of Jump1 button.
-     * (Original XSL attribuut: <code>htmlhelp.button.jump1.title</code>.)
+     * (Original XSL attribute: <code>htmlhelp.button.jump1.title</code>.)
      *
      * @parameter
      */  
@@ -1940,7 +1940,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>local.l10n.xml</code>.)
+     * (Original XSL attribute: <code>local.l10n.xml</code>.)
      *
      * @parameter
      */  
@@ -1948,7 +1948,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>index.links.to.section</code>.)
+     * (Original XSL attribute: <code>index.links.to.section</code>.)
      *
      * @parameter
      */  
@@ -1956,7 +1956,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>xref.with.number.and.title</code>.)
+     * (Original XSL attribute: <code>xref.with.number.and.title</code>.)
      *
      * @parameter
      */  
@@ -1964,7 +1964,7 @@ public abstract class EpubMojo
 
     /**
      * Sets the path to the directory containing the admonition graphics (caution.
-     * (Original XSL attribuut: <code>admon.graphics.path</code>.)
+     * (Original XSL attribute: <code>admon.graphics.path</code>.)
      *
      * @parameter
      */  
@@ -1972,7 +1972,7 @@ public abstract class EpubMojo
 
     /**
      * If you want to include chapter and section numbers into ToC in the left panel, set this parameter to 1.
-     * (Original XSL attribuut: <code>eclipse.autolabel</code>.)
+     * (Original XSL attribute: <code>eclipse.autolabel</code>.)
      *
      * @parameter
      */  
@@ -1980,7 +1980,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>annotation.js</code>.)
+     * (Original XSL attribute: <code>annotation.js</code>.)
      *
      * @parameter
      */  
@@ -1988,7 +1988,7 @@ public abstract class EpubMojo
 
     /**
      * Set this to true to include chapter and section numbers into ToC in the left panel.
-     * (Original XSL attribuut: <code>htmlhelp.autolabel</code>.)
+     * (Original XSL attribute: <code>htmlhelp.autolabel</code>.)
      *
      * @parameter
      */  
@@ -1996,7 +1996,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>table.footnote.number.format</code>.)
+     * (Original XSL attribute: <code>table.footnote.number.format</code>.)
      *
      * @parameter
      */  
@@ -2004,7 +2004,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>html.head.legalnotice.link.types</code>.)
+     * (Original XSL attribute: <code>html.head.legalnotice.link.types</code>.)
      *
      * @parameter
      */  
@@ -2012,7 +2012,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>default.image.width</code>.)
+     * (Original XSL attribute: <code>default.image.width</code>.)
      *
      * @parameter
      */  
@@ -2020,7 +2020,7 @@ public abstract class EpubMojo
 
     /**
      * Set to true to include the Home button  on the toolbar.
-     * (Original XSL attribuut: <code>htmlhelp.button.home</code>.)
+     * (Original XSL attribute: <code>htmlhelp.button.home</code>.)
      *
      * @parameter
      */  
@@ -2028,7 +2028,7 @@ public abstract class EpubMojo
 
     /**
      * If true, a rule will be drawn below the page headers.
-     * (Original XSL attribuut: <code>header.rule</code>.)
+     * (Original XSL attribute: <code>header.rule</code>.)
      *
      * @parameter
      */  
@@ -2036,7 +2036,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>preface.autolabel</code>.)
+     * (Original XSL attribute: <code>preface.autolabel</code>.)
      *
      * @parameter
      */  
@@ -2044,7 +2044,7 @@ public abstract class EpubMojo
 
     /**
      * Set to true if you insert images into your documents as external binary entities or if you are using absolute image paths.
-     * (Original XSL attribuut: <code>htmlhelp.enumerate.images</code>.)
+     * (Original XSL attribute: <code>htmlhelp.enumerate.images</code>.)
      *
      * @parameter
      */  
@@ -2052,7 +2052,7 @@ public abstract class EpubMojo
 
     /**
      * When olinks between documents are resolved for HTML output, the stylesheet can compute the relative path between the current document and the target document.
-     * (Original XSL attribuut: <code>current.docid</code>.)
+     * (Original XSL attribute: <code>current.docid</code>.)
      *
      * @parameter
      */  
@@ -2060,7 +2060,7 @@ public abstract class EpubMojo
 
     /**
      * If true, a web link will be generated, presumably to an online man->HTML gateway.
-     * (Original XSL attribuut: <code>citerefentry.link</code>.)
+     * (Original XSL attribute: <code>citerefentry.link</code>.)
      *
      * @parameter
      */  
@@ -2068,7 +2068,7 @@ public abstract class EpubMojo
 
     /**
      * If you are re-using XML content modules in multiple documents, you may want to redirect some of your olinks.
-     * (Original XSL attribuut: <code>prefer.internal.olink</code>.)
+     * (Original XSL attribute: <code>prefer.internal.olink</code>.)
      *
      * @parameter
      */  
@@ -2076,7 +2076,7 @@ public abstract class EpubMojo
 
     /**
      * If true, SVG will be considered an acceptable image format.
-     * (Original XSL attribuut: <code>use.svg</code>.)
+     * (Original XSL attribute: <code>use.svg</code>.)
      *
      * @parameter
      */  
@@ -2084,7 +2084,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>profile.attribute</code>.)
+     * (Original XSL attribute: <code>profile.attribute</code>.)
      *
      * @parameter
      */  
@@ -2092,7 +2092,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>link.mailto.url</code>.)
+     * (Original XSL attribute: <code>link.mailto.url</code>.)
      *
      * @parameter
      */  
@@ -2100,7 +2100,7 @@ public abstract class EpubMojo
 
     /**
      * Content of this parameter is placed at the end of [WINDOWS] section of project file.
-     * (Original XSL attribuut: <code>htmlhelp.hhp.windows</code>.)
+     * (Original XSL attribute: <code>htmlhelp.hhp.windows</code>.)
      *
      * @parameter
      */  
@@ -2108,7 +2108,7 @@ public abstract class EpubMojo
 
     /**
      * Specifies the maximal depth of TOC on all levels.
-     * (Original XSL attribuut: <code>toc.max.depth</code>.)
+     * (Original XSL attribute: <code>toc.max.depth</code>.)
      *
      * @parameter
      */  
@@ -2116,7 +2116,7 @@ public abstract class EpubMojo
 
     /**
      * To resolve olinks between documents, the stylesheets use a master database document that identifies the target datafiles for all the documents within the scope of the olinks.
-     * (Original XSL attribuut: <code>target.database.document</code>.)
+     * (Original XSL attribute: <code>target.database.document</code>.)
      *
      * @parameter
      */  
@@ -2124,7 +2124,7 @@ public abstract class EpubMojo
 
     /**
      * Sets the filename extension to use on admonition graphics.
-     * (Original XSL attribuut: <code>admon.graphics.extension</code>.)
+     * (Original XSL attribute: <code>admon.graphics.extension</code>.)
      *
      * @parameter
      */  
@@ -2132,7 +2132,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>html.ext</code>.)
+     * (Original XSL attribute: <code>html.ext</code>.)
      *
      * @parameter
      */  
@@ -2140,7 +2140,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>bibliography.numbered</code>.)
+     * (Original XSL attribute: <code>bibliography.numbered</code>.)
      *
      * @parameter
      */  
@@ -2148,7 +2148,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>epub.cover.image.id</code>.)
+     * (Original XSL attribute: <code>epub.cover.image.id</code>.)
      *
      * @parameter
      */  
@@ -2156,7 +2156,7 @@ public abstract class EpubMojo
 
     /**
      * The textinsert extension element inserts the contents of       a file into the result tree (as text).
-     * (Original XSL attribuut: <code>textinsert.extension</code>.)
+     * (Original XSL attribute: <code>textinsert.extension</code>.)
      *
      * @parameter
      */  
@@ -2164,7 +2164,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>epub.cover.html</code>.)
+     * (Original XSL attribute: <code>epub.cover.html</code>.)
      *
      * @parameter
      */  
@@ -2172,7 +2172,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>generate.manifest</code>.)
+     * (Original XSL attribute: <code>generate.manifest</code>.)
      *
      * @parameter
      */  
@@ -2180,7 +2180,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>index.prefer.titleabbrev</code>.)
+     * (Original XSL attribute: <code>index.prefer.titleabbrev</code>.)
      *
      * @parameter
      */  
@@ -2188,7 +2188,7 @@ public abstract class EpubMojo
 
     /**
      * If html.
-     * (Original XSL attribuut: <code>html.base</code>.)
+     * (Original XSL attribute: <code>html.base</code>.)
      *
      * @parameter
      */  
@@ -2196,7 +2196,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>html.cleanup</code>.)
+     * (Original XSL attribute: <code>html.cleanup</code>.)
      *
      * @parameter
      */  
@@ -2204,7 +2204,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>default.table.width</code>.)
+     * (Original XSL attribute: <code>default.table.width</code>.)
      *
      * @parameter
      */  
@@ -2212,7 +2212,7 @@ public abstract class EpubMojo
 
     /**
      * This parameter specifies the system identifier that should be used by the chunking stylesheet in the document type declaration of chunked pages.
-     * (Original XSL attribuut: <code>chunker.output.doctype-system</code>.)
+     * (Original XSL attribute: <code>chunker.output.doctype-system</code>.)
      *
      * @parameter
      */  
@@ -2220,7 +2220,7 @@ public abstract class EpubMojo
 
     /**
      * Specifies the depth to which recursive sections should appear in the TOC.
-     * (Original XSL attribuut: <code>toc.section.depth</code>.)
+     * (Original XSL attribute: <code>toc.section.depth</code>.)
      *
      * @parameter
      */  
@@ -2228,7 +2228,7 @@ public abstract class EpubMojo
 
     /**
      * Sets direction of text flow and text alignment based on locale.
-     * (Original XSL attribuut: <code>writing.mode</code>.)
+     * (Original XSL attribute: <code>writing.mode</code>.)
      *
      * @parameter
      */  
@@ -2236,7 +2236,7 @@ public abstract class EpubMojo
 
     /**
      * JavaHelp crashes on some characters when written as character references.
-     * (Original XSL attribuut: <code>javahelp.encoding</code>.)
+     * (Original XSL attribute: <code>javahelp.encoding</code>.)
      *
      * @parameter
      */  
@@ -2244,7 +2244,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>htmlhelp.display.progress</code>.)
+     * (Original XSL attribute: <code>htmlhelp.display.progress</code>.)
      *
      * @parameter
      */  
@@ -2252,7 +2252,7 @@ public abstract class EpubMojo
 
     /**
      * The stylesheets can use either an image of the numbers one to ten, or the single Unicode character which represents the numeral, in white on a black background.
-     * (Original XSL attribuut: <code>callout.unicode</code>.)
+     * (Original XSL attribute: <code>callout.unicode</code>.)
      *
      * @parameter
      */  
@@ -2260,7 +2260,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>textdata.default.encoding</code>.)
+     * (Original XSL attribute: <code>textdata.default.encoding</code>.)
      *
      * @parameter
      */  
@@ -2268,7 +2268,7 @@ public abstract class EpubMojo
 
     /**
      * If true, TOCs will be annotated.
-     * (Original XSL attribuut: <code>annotate.toc</code>.)
+     * (Original XSL attribute: <code>annotate.toc</code>.)
      *
      * @parameter
      */  
@@ -2276,7 +2276,7 @@ public abstract class EpubMojo
 
     /**
      * If true (true), admonitions are presented in an alternate style that uses a graphic.
-     * (Original XSL attribuut: <code>admon.graphics</code>.)
+     * (Original XSL attribute: <code>admon.graphics</code>.)
      *
      * @parameter
      */  
@@ -2284,7 +2284,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>htmlhelp.button.hideshow</code>.)
+     * (Original XSL attribute: <code>htmlhelp.button.hideshow</code>.)
      *
      * @parameter
      */  
@@ -2292,7 +2292,7 @@ public abstract class EpubMojo
 
     /**
      * Set to true to include the Stop button  on the toolbar.
-     * (Original XSL attribuut: <code>htmlhelp.button.refresh</code>.)
+     * (Original XSL attribute: <code>htmlhelp.button.refresh</code>.)
      *
      * @parameter
      */  
@@ -2300,7 +2300,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>runinhead.default.title.end.punct</code>.)
+     * (Original XSL attribute: <code>runinhead.default.title.end.punct</code>.)
      *
      * @parameter
      */  
@@ -2308,7 +2308,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>glossentry.show.acronym</code>.)
+     * (Original XSL attribute: <code>glossentry.show.acronym</code>.)
      *
      * @parameter
      */  
@@ -2316,7 +2316,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>css.decoration</code>.)
+     * (Original XSL attribute: <code>css.decoration</code>.)
      *
      * @parameter
      */  
@@ -2324,7 +2324,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>use.role.for.mediaobject</code>.)
+     * (Original XSL attribute: <code>use.role.for.mediaobject</code>.)
      *
      * @parameter
      */  
@@ -2332,7 +2332,7 @@ public abstract class EpubMojo
 
     /**
      * If true, section labels are prefixed with the label of the component that contains them.
-     * (Original XSL attribuut: <code>section.label.includes.component.label</code>.)
+     * (Original XSL attribute: <code>section.label.includes.component.label</code>.)
      *
      * @parameter
      */  
@@ -2340,7 +2340,7 @@ public abstract class EpubMojo
 
     /**
      * If true (true), admonitions are presented with a generated text label such as Note or Warning in the appropriate language.
-     * (Original XSL attribuut: <code>admon.textlabel</code>.)
+     * (Original XSL attribute: <code>admon.textlabel</code>.)
      *
      * @parameter
      */  
@@ -2348,7 +2348,7 @@ public abstract class EpubMojo
 
     /**
      * The value of this parameter specifies profiles which should be included in the output.
-     * (Original XSL attribuut: <code>profile.vendor</code>.)
+     * (Original XSL attribute: <code>profile.vendor</code>.)
      *
      * @parameter
      */  
@@ -2356,7 +2356,7 @@ public abstract class EpubMojo
 
     /**
      * The value of this parameter specifies profiles which should be included in the output.
-     * (Original XSL attribuut: <code>profile.status</code>.)
+     * (Original XSL attribute: <code>profile.status</code>.)
      *
      * @parameter
      */  
@@ -2364,7 +2364,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>index.on.role</code>.)
+     * (Original XSL attribute: <code>index.on.role</code>.)
      *
      * @parameter
      */  
@@ -2372,7 +2372,7 @@ public abstract class EpubMojo
 
     /**
      * The image to be used for draft watermarks.
-     * (Original XSL attribuut: <code>draft.watermark.image</code>.)
+     * (Original XSL attribute: <code>draft.watermark.image</code>.)
      *
      * @parameter
      */  
@@ -2380,7 +2380,7 @@ public abstract class EpubMojo
 
     /**
      * The value of this parameter specifies profiles which should be included in the output.
-     * (Original XSL attribuut: <code>profile.wordsize</code>.)
+     * (Original XSL attribute: <code>profile.wordsize</code>.)
      *
      * @parameter
      */  
@@ -2388,7 +2388,7 @@ public abstract class EpubMojo
 
     /**
      * Name of auxiliary file for TeX equations.
-     * (Original XSL attribuut: <code>tex.math.file</code>.)
+     * (Original XSL attribute: <code>tex.math.file</code>.)
      *
      * @parameter
      */  
@@ -2396,7 +2396,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>htmlhelp.output</code>.)
+     * (Original XSL attribute: <code>htmlhelp.output</code>.)
      *
      * @parameter
      */  
@@ -2404,7 +2404,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>qanda.nested.in.toc</code>.)
+     * (Original XSL attribute: <code>qanda.nested.in.toc</code>.)
      *
      * @parameter
      */  
@@ -2412,7 +2412,7 @@ public abstract class EpubMojo
 
     /**
      * If you want Options button shown on toolbar, turn this parameter to 1.
-     * (Original XSL attribuut: <code>htmlhelp.button.options</code>.)
+     * (Original XSL attribute: <code>htmlhelp.button.options</code>.)
      *
      * @parameter
      */  
@@ -2420,7 +2420,7 @@ public abstract class EpubMojo
 
     /**
      * Set the color of table cell borders.
-     * (Original XSL attribuut: <code>table.cell.border.color</code>.)
+     * (Original XSL attribute: <code>table.cell.border.color</code>.)
      *
      * @parameter
      */  
@@ -2428,7 +2428,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>olink.fragid</code>.)
+     * (Original XSL attribute: <code>olink.fragid</code>.)
      *
      * @parameter
      */  
@@ -2436,7 +2436,7 @@ public abstract class EpubMojo
 
     /**
      * The separator is inserted between line numbers and lines in the verbatim environment.
-     * (Original XSL attribuut: <code>linenumbering.separator</code>.)
+     * (Original XSL attribute: <code>linenumbering.separator</code>.)
      *
      * @parameter
      */  
@@ -2444,7 +2444,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>docbook.css.source</code>.)
+     * (Original XSL attribute: <code>docbook.css.source</code>.)
      *
      * @parameter
      */  
@@ -2452,7 +2452,7 @@ public abstract class EpubMojo
 
     /**
      * If set to zero, there will be no entry for the root element in the  ToC.
-     * (Original XSL attribuut: <code>htmlhelp.hhc.show.root</code>.)
+     * (Original XSL attribute: <code>htmlhelp.hhc.show.root</code>.)
      *
      * @parameter
      */  
@@ -2460,7 +2460,7 @@ public abstract class EpubMojo
 
     /**
      * If you want to include chapter and section numbers into ToC in,  set this parameter to 1.
-     * (Original XSL attribuut: <code>epub.autolabel</code>.)
+     * (Original XSL attribute: <code>epub.autolabel</code>.)
      *
      * @parameter
      */  
@@ -2468,7 +2468,7 @@ public abstract class EpubMojo
 
     /**
      * Set to true to include the Next button  on the toolbar.
-     * (Original XSL attribuut: <code>htmlhelp.button.next</code>.)
+     * (Original XSL attribute: <code>htmlhelp.button.next</code>.)
      *
      * @parameter
      */  
@@ -2476,7 +2476,7 @@ public abstract class EpubMojo
 
     /**
      * Selects the direction in which a float should be placed.
-     * (Original XSL attribuut: <code>default.float.class</code>.)
+     * (Original XSL attribute: <code>default.float.class</code>.)
      *
      * @parameter
      */  
@@ -2484,7 +2484,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>label.from.part</code>.)
+     * (Original XSL attribute: <code>label.from.part</code>.)
      *
      * @parameter
      */  
@@ -2492,7 +2492,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>abstract.notitle.enabled</code>.)
+     * (Original XSL attribute: <code>abstract.notitle.enabled</code>.)
      *
      * @parameter
      */  
@@ -2500,7 +2500,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>bibliography.style</code>.)
+     * (Original XSL attribute: <code>bibliography.style</code>.)
      *
      * @parameter
      */  
@@ -2508,7 +2508,7 @@ public abstract class EpubMojo
 
     /**
      * Specifies the thickness of the border on the table's frame.
-     * (Original XSL attribuut: <code>table.frame.border.thickness</code>.)
+     * (Original XSL attribute: <code>table.frame.border.thickness</code>.)
      *
      * @parameter
      */  
@@ -2516,7 +2516,7 @@ public abstract class EpubMojo
 
     /**
      * If true, then the exsl:node-set() function is available to be used in the stylesheet.
-     * (Original XSL attribuut: <code>exsl.node.set.available</code>.)
+     * (Original XSL attribute: <code>exsl.node.set.available</code>.)
      *
      * @parameter
      */  
@@ -2524,7 +2524,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>callouts.extension</code>.)
+     * (Original XSL attribute: <code>callouts.extension</code>.)
      *
      * @parameter
      */  
@@ -2532,7 +2532,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>annotation.support</code>.)
+     * (Original XSL attribute: <code>annotation.support</code>.)
      *
      * @parameter
      */  
@@ -2540,7 +2540,7 @@ public abstract class EpubMojo
 
     /**
      * This parameter specifies the value of the standalone   specification for generated pages.
-     * (Original XSL attribuut: <code>chunker.output.standalone</code>.)
+     * (Original XSL attribute: <code>chunker.output.standalone</code>.)
      *
      * @parameter
      */  
@@ -2548,7 +2548,7 @@ public abstract class EpubMojo
 
     /**
      * Separator character used for compound profile values.
-     * (Original XSL attribuut: <code>profile.separator</code>.)
+     * (Original XSL attribute: <code>profile.separator</code>.)
      *
      * @parameter
      */  
@@ -2556,7 +2556,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>linenumbering.extension</code>.)
+     * (Original XSL attribute: <code>linenumbering.extension</code>.)
      *
      * @parameter
      */  
@@ -2564,7 +2564,7 @@ public abstract class EpubMojo
 
     /**
      * Specifies the filename of the alias file (used for context-sensitive help).
-     * (Original XSL attribuut: <code>htmlhelp.alias.file</code>.)
+     * (Original XSL attribute: <code>htmlhelp.alias.file</code>.)
      *
      * @parameter
      */  
@@ -2572,7 +2572,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>keep.relative.image.uris</code>.)
+     * (Original XSL attribute: <code>keep.relative.image.uris</code>.)
      *
      * @parameter
      */  
@@ -2580,7 +2580,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>use.id.as.filename</code>.)
+     * (Original XSL attribute: <code>use.id.as.filename</code>.)
      *
      * @parameter
      */  
@@ -2588,7 +2588,7 @@ public abstract class EpubMojo
 
     /**
      * The value of this parameter specifies profiles which should be included in the output.
-     * (Original XSL attribuut: <code>profile.userlevel</code>.)
+     * (Original XSL attribute: <code>profile.userlevel</code>.)
      *
      * @parameter
      */  
@@ -2596,7 +2596,7 @@ public abstract class EpubMojo
 
     /**
      * Eclipse Help plugin name.
-     * (Original XSL attribuut: <code>eclipse.plugin.name</code>.)
+     * (Original XSL attribute: <code>eclipse.plugin.name</code>.)
      *
      * @parameter
      */  
@@ -2604,7 +2604,7 @@ public abstract class EpubMojo
 
     /**
      * If non-zero, specifies the thickness of borders on table cells.
-     * (Original XSL attribuut: <code>table.cell.border.thickness</code>.)
+     * (Original XSL attribute: <code>table.cell.border.thickness</code>.)
      *
      * @parameter
      */  
@@ -2612,7 +2612,7 @@ public abstract class EpubMojo
 
     /**
      * Specifies the border style of table cells.
-     * (Original XSL attribuut: <code>table.cell.border.style</code>.)
+     * (Original XSL attribute: <code>table.cell.border.style</code>.)
      *
      * @parameter
      */  
@@ -2620,7 +2620,7 @@ public abstract class EpubMojo
 
     /**
      * URL address of page accessible by Jump1 button.
-     * (Original XSL attribuut: <code>htmlhelp.button.jump1.url</code>.)
+     * (Original XSL attribute: <code>htmlhelp.button.jump1.url</code>.)
      *
      * @parameter
      */  
@@ -2628,7 +2628,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>graphicsize.use.img.src.path</code>.)
+     * (Original XSL attribute: <code>graphicsize.use.img.src.path</code>.)
      *
      * @parameter
      */  
@@ -2636,7 +2636,7 @@ public abstract class EpubMojo
 
     /**
      * If true, each of the ToC and LoTs (List of Examples, List of Figures, etc.
-     * (Original XSL attribuut: <code>chunk.separate.lots</code>.)
+     * (Original XSL attribute: <code>chunk.separate.lots</code>.)
      *
      * @parameter
      */  
@@ -2644,7 +2644,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>use.embed.for.svg</code>.)
+     * (Original XSL attribute: <code>use.embed.for.svg</code>.)
      *
      * @parameter
      */  
@@ -2652,7 +2652,7 @@ public abstract class EpubMojo
 
     /**
      * If true, unlabeled qandadivs will be enumerated.
-     * (Original XSL attribuut: <code>qandadiv.autolabel</code>.)
+     * (Original XSL attribute: <code>qandadiv.autolabel</code>.)
      *
      * @parameter
      */  
@@ -2660,7 +2660,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>ebnf.statement.terminator</code>.)
+     * (Original XSL attribute: <code>ebnf.statement.terminator</code>.)
      *
      * @parameter
      */  
@@ -2668,7 +2668,7 @@ public abstract class EpubMojo
 
     /**
      * In order to resolve olinks efficiently, the stylesheets can generate an external data file containing information about all potential cross reference endpoints in a document.
-     * (Original XSL attribuut: <code>targets.filename</code>.)
+     * (Original XSL attribute: <code>targets.filename</code>.)
      *
      * @parameter
      */  
@@ -2676,7 +2676,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>generate.section.toc.level</code>.)
+     * (Original XSL attribute: <code>generate.section.toc.level</code>.)
      *
      * @parameter
      */  
@@ -2684,7 +2684,7 @@ public abstract class EpubMojo
 
     /**
      * When true, additional, empty paragraphs are inserted in several contexts (for example, around informal figures), to create a more pleasing visual appearance in many browsers.
-     * (Original XSL attribuut: <code>spacing.paras</code>.)
+     * (Original XSL attribute: <code>spacing.paras</code>.)
      *
      * @parameter
      */  
@@ -2692,7 +2692,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>function.parens</code>.)
+     * (Original XSL attribute: <code>function.parens</code>.)
      *
      * @parameter
      */  
@@ -2700,7 +2700,7 @@ public abstract class EpubMojo
 
     /**
      * Formal procedures are numbered and always have a title.
-     * (Original XSL attribuut: <code>formal.procedures</code>.)
+     * (Original XSL attribute: <code>formal.procedures</code>.)
      *
      * @parameter
      */  
@@ -2708,7 +2708,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>epub.cover.filename</code>.)
+     * (Original XSL attribute: <code>epub.cover.filename</code>.)
      *
      * @parameter
      */  
@@ -2716,7 +2716,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>process.source.toc</code>.)
+     * (Original XSL attribute: <code>process.source.toc</code>.)
      *
      * @parameter
      */  
@@ -2724,7 +2724,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>annotation.css</code>.)
+     * (Original XSL attribute: <code>annotation.css</code>.)
      *
      * @parameter
      */  
@@ -2732,7 +2732,7 @@ public abstract class EpubMojo
 
     /**
      * Set the section depth in the left pane of HTML Help viewer.
-     * (Original XSL attribuut: <code>htmlhelp.hhc.section.depth</code>.)
+     * (Original XSL attribute: <code>htmlhelp.hhc.section.depth</code>.)
      *
      * @parameter
      */  
@@ -2740,7 +2740,7 @@ public abstract class EpubMojo
 
     /**
      * When cross reference data is collected for use by olinks, the data for each potential target includes one field containing a completely assembled cross reference string, as if it were an xref generated in that document.
-     * (Original XSL attribuut: <code>use.local.olink.style</code>.)
+     * (Original XSL attribute: <code>use.local.olink.style</code>.)
      *
      * @parameter
      */  
@@ -2748,7 +2748,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>phrase.propagates.style</code>.)
+     * (Original XSL attribute: <code>phrase.propagates.style</code>.)
      *
      * @parameter
      */  
@@ -2756,7 +2756,7 @@ public abstract class EpubMojo
 
     /**
      * If true, callouts are presented with graphics (e.
-     * (Original XSL attribuut: <code>callout.graphics</code>.)
+     * (Original XSL attribute: <code>callout.graphics</code>.)
      *
      * @parameter
      */  
@@ -2764,7 +2764,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>insert.olink.page.number</code>.)
+     * (Original XSL attribute: <code>insert.olink.page.number</code>.)
      *
      * @parameter
      */  
@@ -2772,7 +2772,7 @@ public abstract class EpubMojo
 
     /**
      * If true title of document is shown before ToC/LoT in separate chunk.
-     * (Original XSL attribuut: <code>chunk.tocs.and.lots.has.title</code>.)
+     * (Original XSL attribute: <code>chunk.tocs.and.lots.has.title</code>.)
      *
      * @parameter
      */  
@@ -2780,7 +2780,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>component.label.includes.part.label</code>.)
+     * (Original XSL attribute: <code>component.label.includes.part.label</code>.)
      *
      * @parameter
      */  
@@ -2788,7 +2788,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>profile.value</code>.)
+     * (Original XSL attribute: <code>profile.value</code>.)
      *
      * @parameter
      */  
@@ -2796,7 +2796,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>img.src.path</code>.)
+     * (Original XSL attribute: <code>img.src.path</code>.)
      *
      * @parameter
      */  
@@ -2804,7 +2804,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>firstterm.only.link</code>.)
+     * (Original XSL attribute: <code>firstterm.only.link</code>.)
      *
      * @parameter
      */  
@@ -2812,7 +2812,7 @@ public abstract class EpubMojo
 
     /**
      * Selects draft mode.
-     * (Original XSL attribuut: <code>draft.mode</code>.)
+     * (Original XSL attribute: <code>draft.mode</code>.)
      *
      * @parameter
      */  
@@ -2820,7 +2820,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>funcsynopsis.decoration</code>.)
+     * (Original XSL attribute: <code>funcsynopsis.decoration</code>.)
      *
      * @parameter
      */  
@@ -2828,7 +2828,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>callout.unicode.number.limit</code>.)
+     * (Original XSL attribute: <code>callout.unicode.number.limit</code>.)
      *
      * @parameter
      */  
@@ -2836,7 +2836,7 @@ public abstract class EpubMojo
 
     /**
      * Set to true to include the Print button  on the toolbar.
-     * (Original XSL attribuut: <code>htmlhelp.button.print</code>.)
+     * (Original XSL attribute: <code>htmlhelp.button.print</code>.)
      *
      * @parameter
      */  
@@ -2844,7 +2844,7 @@ public abstract class EpubMojo
 
     /**
      * Eclipse Help plugin provider name.
-     * (Original XSL attribuut: <code>eclipse.plugin.provider</code>.)
+     * (Original XSL attribute: <code>eclipse.plugin.provider</code>.)
      *
      * @parameter
      */  
@@ -2852,7 +2852,7 @@ public abstract class EpubMojo
 
     /**
      * The value of this parameter specifies profiles which should be included in the output.
-     * (Original XSL attribuut: <code>profile.lang</code>.)
+     * (Original XSL attribute: <code>profile.lang</code>.)
      *
      * @parameter
      */  
@@ -2860,7 +2860,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>olink.pubid</code>.)
+     * (Original XSL attribute: <code>olink.pubid</code>.)
      *
      * @parameter
      */  
@@ -2868,7 +2868,7 @@ public abstract class EpubMojo
 
     /**
      * 
-     * (Original XSL attribuut: <code>blurb.on.titlepage.enabled</code>.)
+     * (Original XSL attribute: <code>blurb.on.titlepage.enabled</code>.)
      *
      * @parameter
      */  

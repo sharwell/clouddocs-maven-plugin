@@ -45,7 +45,7 @@ public class DocBookResolver implements URIResolver {
                 try {
                     return new StreamSource (url.openStream(), url.toExternalForm());
                 }catch (IOException ioe) {
-                    throw new TransformerException ("Can't get docbook refrence "+href+"->"+filePath, ioe);
+                    throw new TransformerException ("Can't get docbook reference "+href+"->"+filePath, ioe);
                 }
             } else {
                 throw new TransformerException ("Can't resolve docbook link: "+href+"->"+filePath+" Docbook missing in classpath?");
@@ -61,7 +61,7 @@ public class DocBookResolver implements URIResolver {
                 try {
                     return new StreamSource (url.openStream(), url.toExternalForm());
                 }catch (IOException ioe) {
-                    throw new TransformerException ("Can't get docbook refrence "+href+"->"+filePath, ioe);
+                    throw new TransformerException ("Can't get docbook reference "+href+"->"+filePath, ioe);
                 }
             } else {
                 throw new TransformerException ("Can't resolve docbook link: "+href+"->"+filePath+" Docbook missing in classpath?");

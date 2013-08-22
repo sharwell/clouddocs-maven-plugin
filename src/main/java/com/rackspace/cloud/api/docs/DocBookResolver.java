@@ -22,8 +22,8 @@ import java.util.regex.Matcher;
    stylesheets.
  **/
 public class DocBookResolver implements URIResolver {
-    private URIResolver originalResolver;
-    private String type;
+    private final URIResolver originalResolver;
+    private final String type;
     private static final Pattern urnPatternA = Pattern.compile ("urn:docbkx:stylesheet\\-orig(/.*)?");
     private static final Pattern urnPatternB = Pattern.compile ("urn:docbkx:stylesheet\\-base(/.*)?");
     public DocBookResolver (URIResolver original, String type) {
@@ -31,6 +31,7 @@ public class DocBookResolver implements URIResolver {
         this.type = type;
     }
 
+    @Override
     public Source resolve (String href, String base) throws TransformerException {
         Matcher mA = urnPatternA.matcher (href);
         Matcher mB = urnPatternB.matcher (href);

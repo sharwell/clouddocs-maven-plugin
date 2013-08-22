@@ -6,7 +6,6 @@ import javax.xml.transform.stream.StreamSource;
 
 import org.apache.batik.transcoder.TranscoderInput;
 import org.apache.batik.transcoder.TranscoderOutput;
-import org.apache.batik.transcoder.image.JPEGTranscoder;
 import org.apache.batik.transcoder.image.PNGTranscoder;
 import org.apache.maven.plugin.MojoExecutionException;
 import java.io.File;
@@ -16,16 +15,13 @@ import java.util.List;
 import java.util.Properties;
 import org.apache.maven.project.MavenProject;
 import org.apache.tools.ant.Target;
-import org.xml.sax.XMLReader;
-import org.xml.sax.SAXException;
-
-import org.codehaus.plexus.archiver.Archiver;
-import org.codehaus.plexus.archiver.manager.ArchiverManager;
 import org.codehaus.plexus.archiver.zip.ZipArchiver;
 import org.codehaus.plexus.util.FileUtils;
 
 import java.io.IOException;
 import java.net.URL;
+import org.apache.batik.transcoder.TranscoderException;
+import org.codehaus.plexus.archiver.ArchiverException;
 
 
 /**
@@ -55,7 +51,7 @@ public abstract class EpubMojo
      * @required
      * @readonly
      */
-    List artifacts;
+    List<?> artifacts;
 
     /**
      * Ant tasks to be executed before the transformation. Comparable
@@ -88,7 +84,7 @@ public abstract class EpubMojo
      *
      * @parameter
      */
-    private List entities;
+    private List<?> entities;
 
     /**
      * A list of additional XSL parameters to give to the XSLT engine.
@@ -101,7 +97,7 @@ public abstract class EpubMojo
      *
      * @parameter
      */
-    private List customizationParameters;
+    private List<?> customizationParameters;
 
     /**
      * List of additional System properties.
@@ -2882,6 +2878,7 @@ public abstract class EpubMojo
         this.imageDirectory = imageDirectory;
     }
 
+    @Override
     protected void configure(Transformer transformer) {
         getLog().debug("Configure the transformer.");
         if (chunkQuietly != null) {
@@ -4242,26 +4239,32 @@ public abstract class EpubMojo
         }                     
     }
 
+    @Override
     public File getSourceDirectory() {
         return sourceDirectory;
     }
 
+    @Override
     public File getTargetDirectory() {
         return targetDirectory;
     }
 
+    @Override
     public File getGeneratedSourceDirectory() {
         return generatedSourceDirectory;
     }
 
+    @Override
 	public String getDefaultStylesheetLocation() {
         return "docbook/epub/docbook.xsl";
 	}
 
+    @Override
 	public String getType() {
 	    return "epub";
 	}
 
+    @Override
     public String getStylesheetLocation() {
     	getLog().debug("Customization: " + epubCustomization);
         if (epubCustomization != null) {
@@ -4273,14 +4276,17 @@ public abstract class EpubMojo
         }
     }
 
+    @Override
     public String getTargetFileExtension() {
         return targetFileExtension;
     }
 
+    @Override
     public void setTargetFileExtension(String extension) {
         targetFileExtension = extension;
     }
 
+    @Override
     public String[] getIncludes() {
         String[] results = includes.split(",");
         for (int i = 0; i < results.length; i++) {
@@ -4289,36 +4295,44 @@ public abstract class EpubMojo
         return results;
     }
 
-    public List getEntities() {
+    @Override
+    public List<?> getEntities() {
         return entities;
     }
 
-    public List getCustomizationParameters()
+    @Override
+    public List<?> getCustomizationParameters()
     {
     	return customizationParameters;
     }
 
+    @Override
     public Properties getSystemProperties()
     {
         return systemProperties;
     }
 
+    @Override
     public Target getPreProcess() {
         return preProcess;
     }
 
+    @Override
     public Target getPostProcess() {
         return postProcess;
     }
 
+    @Override
     public MavenProject getMavenProject() {
         return project;
     }
 
-    public List getArtifacts() {
+    @Override
+    public List<?> getArtifacts() {
         return artifacts;
     }
 
+    @Override
     protected boolean getXIncludeSupported() {
         return xincludeSupported;
     }
@@ -4328,6 +4342,7 @@ public abstract class EpubMojo
      *
      * @return If using the standard output.
      */
+    @Override
     protected boolean isUseStandardOutput() {
         return useStandardOutput;
     }
@@ -4337,6 +4352,7 @@ public abstract class EpubMojo
     }
 
 
+    @Override
   public void postProcessResult(File result) throws MojoExecutionException {
  
     // First transform the cover page
@@ -4367,25 +4383,27 @@ public abstract class EpubMojo
       zipArchiver.createArchive();
 
       getLog().debug("epub file created at: " + zipArchiver.getDestFile().getAbsolutePath());
-    } catch (Exception e) {
+    } catch (IOException e) {
+      throw new MojoExecutionException("Unable to zip epub file", e);
+    } catch (ArchiverException e) {
       throw new MojoExecutionException("Unable to zip epub file", e);
     }
   }
 
 
-      /**
+    /**
      * The greeting to display.
      *
      * @parameter expression="${generate-pdf.branding}" default-value="rackspace"
      */
-    private String branding;
+    protected String branding;
 
     /**
      * A parameter used to specify the security level (external, internal, reviewer, writeronly) of the document.
      *
      * @parameter expression="${generate-pdf.security}" default-value=""
      */
-    private String security;
+    protected String security;
 
 
      /**
@@ -4393,12 +4411,12 @@ public abstract class EpubMojo
      *
      * @parameter expression="${generate-pdf.trim.wadl.uri.count}" default-value=""
      */
-    private String trimWadlUriCount;
+    protected String trimWadlUriCount;
 
     /**
      * @parameter expression="${project.build.directory}"
      */
-    private String projectBuildDirectory;
+    protected File projectBuildDirectory;
 
     /**
      * Controls how the path to the wadl is calculated. If 0 or not set, then
@@ -4410,11 +4428,12 @@ public abstract class EpubMojo
      */
     private String computeWadlPathFromDocbookPath;
 
+    @Override
   public void adjustTransformer(Transformer transformer, String sourceFilename, File targetFile) {
         super.adjustTransformer(transformer, sourceFilename, targetFile);
 
 	transformer.setParameter("branding", branding);
-	transformer.setParameter("project.build.directory", projectBuildDirectory);
+	transformer.setParameter("project.build.directory", projectBuildDirectory.toURI().toString());
 
 	if(security != null){
 	    transformer.setParameter("security",security);
@@ -4432,12 +4451,12 @@ public abstract class EpubMojo
         File imageDirectory = getImageDirectory();
         File calloutDirectory = new File (imageDirectory, "callouts");
 
-	transformer.setParameter("docbook.infile",sourceDocBook.getAbsolutePath());
-	transformer.setParameter("source.directory",sourceDirectory);
+	transformer.setParameter("docbook.infile",sourceDocBook.toURI().toString());
+	transformer.setParameter("source.directory",sourceDirectory.toURI().toString());
 	transformer.setParameter("compute.wadl.path.from.docbook.path",computeWadlPathFromDocbookPath);
 
-        transformer.setParameter ("admon.graphics.path", imageDirectory.getAbsolutePath()+File.separator);
-        transformer.setParameter ("callout.graphics.path", calloutDirectory.getAbsolutePath()+File.separator);
+        transformer.setParameter ("admon.graphics.path", imageDirectory.toURI().toString());
+        transformer.setParameter ("callout.graphics.path", calloutDirectory.toURI().toString());
 
         //
         //  Setup the background image file
@@ -4449,10 +4468,11 @@ public abstract class EpubMojo
 
 	coverImageTemplate = new File (cloudSub, branding + "-cover.st");
 
-        transformer.setParameter ("cloud.api.background.image", coverImage.getAbsolutePath());
-        transformer.setParameter ("cloud.api.cc.image.dir", ccSub.getAbsolutePath());
+        transformer.setParameter ("cloud.api.background.image", coverImage.toURI().toString());
+        transformer.setParameter ("cloud.api.cc.image.dir", ccSub.toURI().toString());
     }
-  protected void transformCover() throws MojoExecutionException {
+
+    protected void transformCover() throws MojoExecutionException {
         try {
             ClassLoader classLoader = Thread.currentThread()
                 .getContextClassLoader();
@@ -4473,6 +4493,7 @@ public abstract class EpubMojo
             }
     }
 
+    @Override
   public void preProcess() throws MojoExecutionException {
         super.preProcess();
 
@@ -4495,8 +4516,7 @@ public abstract class EpubMojo
         com.rackspace.cloud.api.docs.FileUtils.extractJaredDirectory("fonts", PDFMojo.class, imageParentDirectory);
     }
 
-
-    public void rasterize() throws RuntimeException{
+    public void rasterize() throws RuntimeException {
         try{
         // Create a JPEG transcoder
         PNGTranscoder t = new PNGTranscoder();
@@ -4506,7 +4526,7 @@ public abstract class EpubMojo
          //                    new Float(.8));
 
         // Create the transcoder input.
-        String svgURI = new File("/Users/nare4013/epub/rackspace-template/rackspace-template/target/docbkx/images/cloud/cover.svg").toURL().toString();
+        String svgURI = new File("/Users/nare4013/epub/rackspace-template/rackspace-template/target/docbkx/images/cloud/cover.svg").toURI().toString();
         TranscoderInput input = new TranscoderInput(svgURI);
 
         // Create the transcoder output.
@@ -4520,10 +4540,12 @@ public abstract class EpubMojo
         ostream.flush();
         ostream.close();
         }
-        catch(Exception e){
+        catch(IOException e){
             throw new RuntimeException("Could not able to rasterize the svg", e);
         }
-   
-}
+        catch(TranscoderException e){
+            throw new RuntimeException("Could not able to rasterize the svg", e);
+        }
+    }
 
 }

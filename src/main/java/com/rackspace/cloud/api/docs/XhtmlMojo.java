@@ -24,7 +24,7 @@ public abstract class XhtmlMojo extends AbstractHtmlMojo {
     /**
      * @parameter expression="${project.build.directory}"
      */
-    private String projectBuildDirectory;
+    private File projectBuildDirectory;
 
     /**
      * 
@@ -157,7 +157,7 @@ public abstract class XhtmlMojo extends AbstractHtmlMojo {
      *     expression="${generate-xhtml.includes}" 
      *     default-value=""
      */
-    private String transformDir;   
+    private File transformDir;
     
     /**
      * A parameter used to configure how many elements to trim from the URI in the documentation for a wadl method.
@@ -292,10 +292,10 @@ public abstract class XhtmlMojo extends AbstractHtmlMojo {
         String pathToPipelineFile = "classpath:/war.xpl"; //use "classpath:/path" for this to work
         Source source = super.createSource(inputFilename, sourceFile, filter);
 
-        Map map=new HashMap<String, String>();
+        Map<String, Object> map=new HashMap<String, Object>();
         
         map.put("failOnValidationError", failOnValidationError);
-        map.put("transform.dir", transformDir);        
+        map.put("transform.dir", transformDir.toURI().toString());
              
     if(feedbackEmail != null){
       map.put("feedback.email", feedbackEmail);
@@ -306,7 +306,7 @@ public abstract class XhtmlMojo extends AbstractHtmlMojo {
     if (useVersionForDisqus != null) {
        map.put("use.version.for.disqus", useVersionForDisqus);
     }
-        map.put("project.build.directory", projectBuildDirectory);
+        map.put("project.build.directory", projectBuildDirectory.toURI().toString());
         map.put("branding", branding);
         map.put("builtForOpenStack", builtForOpenStack);
         map.put("enable.disqus", enableDisqus);
@@ -352,7 +352,7 @@ public abstract class XhtmlMojo extends AbstractHtmlMojo {
 
 //   sourceDocBook = new File(sourceFilename);
 //   sourceDirectory = sourceDocBook.getParentFile();
-//   map.put("docbook.infile",sourceDocBook.getAbsolutePath());
+//   map.put("docbook.infile",sourceDocBook.toURI().toString());
 //   map.put("source.directory",sourceDirectory);
              
         // Profiling attrs:        
@@ -376,7 +376,7 @@ public abstract class XhtmlMojo extends AbstractHtmlMojo {
             
         	int index = theFileName.indexOf('.');
         	if(-1!=index){
-            	String targetDir="target/docbkx/xhtml/"+theDirName+theFileName.substring(0,index) + "/";
+            	File targetDir=new File("target/docbkx/xhtml/"+theDirName+theFileName.substring(0,index) + "/");
 
             	map.put("base.dir", targetDir);      
         	}
@@ -390,7 +390,7 @@ public abstract class XhtmlMojo extends AbstractHtmlMojo {
         	String theFileName=inputFilename;
         	int index = theFileName.indexOf('.');
         	if(-1!=index){
-            	String targetDir="target/docbkx/xhtml/"+theFileName.substring(0,index) + "/";
+            	File targetDir=new File("target/docbkx/xhtml/"+theFileName.substring(0,index) + "/");
             	map.put("base.dir", targetDir);        		
             	map.put("input.filename", theFileName.substring(0,index));  		
 

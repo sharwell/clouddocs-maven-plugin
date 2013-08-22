@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE xsl:stylesheet [
 <!ENTITY lowercase "'abcdefghijklmnopqrstuvwxyz'">
 <!ENTITY uppercase "'ABCDEFGHIJKLMNOPQRSTUVWXYZ'">
@@ -420,7 +420,7 @@
 
 
   <xsl:param name="current.docid" select="/*/@xml:id"/>
-  <xsl:param name="target.database.document" select="concat('file:///',$project.build.directory, '/../olink.db')"/>
+  <xsl:param name="target.database.document" select="concat($project.build.directory, '/../olink.db')"/>
   <xsl:param name="olink.doctitle">yes</xsl:param> 
   <xsl:param name="activate.external.olinks" select="0"/>
 

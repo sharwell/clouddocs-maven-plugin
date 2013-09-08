@@ -606,6 +606,24 @@ setting failOnValidationError to no in your pom.
                     <p:pipe step="lists-files" port="secondary"/>
                 </p:iteration-source>
                 <p:variable name="href" select="/*/@href"/>
+                <p:load name="wadl">
+                    <p:with-option name="href" select="$href"/>
+                </p:load>
+                <p:validate-with-schematron name="schematron" assert-valid="true">
+                    <p:input port="source">
+                        <p:pipe port="result" step="wadl"/>
+                    </p:input>
+                    <p:input port="schema">
+                        <p:document href="classpath:/cloud/normalizeWadl/wadl.sch"/>
+                    </p:input>
+                </p:validate-with-schematron>
+            </p:for-each>
+
+            <p:for-each>
+                <p:iteration-source select="//wadl">
+                    <p:pipe step="lists-files" port="secondary"/>
+                </p:iteration-source>
+                <p:variable name="href" select="/*/@href"/>
                 <p:variable name="newhref" select="/*/@newhref"/>
                 <p:variable name="checksum" select="/*/@checksum"/>
                 <p:load name="wadl">

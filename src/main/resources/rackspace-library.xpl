@@ -609,6 +609,9 @@ setting failOnValidationError to no in your pom.
                 <p:load name="wadl">
                     <p:with-option name="href" select="$href"/>
                 </p:load>
+                <cx:message>
+                    <p:with-option name="message" select="concat('  Validating WADL with schematron: ', $href)"/>
+                </cx:message>
                 <p:validate-with-schematron name="schematron" assert-valid="true">
                     <p:input port="source">
                         <p:pipe port="result" step="wadl"/>

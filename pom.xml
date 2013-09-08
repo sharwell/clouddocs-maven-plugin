@@ -319,13 +319,14 @@
                                     <outputDirectory>target/classes/cloud/normalizeWadl</outputDirectory>
                                     <destFileName />
                                     <includes>
+                                        **/wadl.sch,
                                         **/normalizeWadl1.xsl,
                                         **/normalizeWadl2.xsl,
                                         **/normalizeWadl3.xsl,
                                         **/normalizeWadl4.xsl,
                                         **/normalizeWadl5.xsl
                                     </includes>
-                                    <excludes>**/*.xml,**/*.xsd,**/*.dtd,**/*.sch,**/*.class,**/*.properties,**/*.MF</excludes>
+                                    <excludes>**/*.xml,**/*.xsd,**/*.dtd,**/*.class,**/*.properties,**/*.MF</excludes>
                                 </artifactItem>
                             </artifactItems>
                         </configuration>
